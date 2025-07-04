@@ -1,1 +1,3 @@
-- 
+- xのコンポーネントを統合する
+- prepare localhost server application
+- make server 

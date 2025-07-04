@@ -5,21 +5,26 @@ from google.adk.artifacts.in_memory_artifact_service import InMemoryArtifactServ
 from google.adk.runners import Runner
 from google.adk.sessions import InMemorySessionService
 from google.genai import types
+from google.adk.tools.agent_tool import AgentTool
 from rmma2.agent import rmma 
 
 
-def find_agent(agent, target_name):
+def find_agent(agent, targat_name):
 
     result = None
     print("Matching...", agent.name)
-    if agent.name==target_name:
+    if agent.name==targat_name:
         return agent
     for sub_agent in agent.sub_agents:
         print("Searching...", )
-        result = find_agent(sub_agent, target_name)
+        result = find_agent(sub_agent, targat_name)
         if result:
             break
-    
+    for tool in agent.tools:
+        if isinstance(tool, AgentTool):
+            result = find_agent(tool.agent, targat_name)
+            if result:
+                break
     return result
 
 
@@ -86,21 +91,30 @@ async def async_content_generation(prompt):
                     f"\n[{author}]: {function_call.name}( {json.dumps(function_call.args)})"
                 )
 
-        elif function_responses:
-            for function_response in function_responses:
-                function_name = function_response.name
-                application_payload = function_response.text_response
-                if  function_name == "airbnb_search":
-                    application_payload = application_payload["result"].content[0].text
+        # elif function_responses:
+        #     for function_response in function_responses:
+        #         function_name = function_response.name
+        #         application_payload = function_response.text_response
+        #         if  function_name == "airbnb_search":
+        #             application_payload = application_payload["result"].content[0].text
                     
-                print(
-                    f"\n[{author}]: {function_name} responds -> {application_payload}"
-                )
+        #         print(
+        #             f"\n[{author}]: {function_name} responds -> {application_payload}"
+        #         )
 
 
 if __name__ == "__main__":
+
+    #debug 1
+    # asyncio.run(
+    #     async_content_generation(
+    #         "Please generate the content of tweet. Just only generate the content."
+    #     )
+    # )
+
+    #debug 2
     asyncio.run(
         async_content_generation(
-            "Please generate the content of tweet. Just only generate the content"
+            "Please generate the content of tweet and post it on X. please use tool calling."
         )
     )
