@@ -8,7 +8,7 @@ role = """
 常に改善を繰り返し全力でマーケティングし新規契約に向けて頑張りましょう。
 """
 
-RAKUTEN_MOBILE_MARKETING_AGENT_PROMPT="""
+RAKUTEN_MOBILE_MARKETING_AGENT_PROMPT=f"""
 役割：
 {role}
 
