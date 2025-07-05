@@ -81,6 +81,10 @@ async def async_content_generation(prompt):
             e.function_response for e in event.content.parts if e.function_response
         ]
 
+        if event.usage_metadata:
+            total_token = event.usage_metadata.total_token_count
+            print("Total token is ", total_token)
+
         if event.content.parts[0].text:
             text_response = event.content.parts[0].text
             print(f"\n[{author}]: {text_response}")
