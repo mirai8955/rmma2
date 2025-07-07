@@ -108,12 +108,10 @@ async def async_content_generation(prompt):
 
 
 if __name__ == "__main__":
-
-
-    #debug 2
+    #debug 3
     asyncio.run(
         async_content_generation(
-            "Please generate a short tweet (under 200 characters) about Rakuten Mobile and post it on X. "
-            "Use the post_on_x tool."
+            "節税をしていて，楽天モバイルに興味がありそうなツイートをしている投稿を検索して表示して."
+            "tool callingを使用すれば投稿を検索できる．"
         )
     )

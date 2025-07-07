@@ -134,12 +134,13 @@ class x_client:
             print("[X] Failed to fetch tweet:", r.text)
         return r
 
-    def search(self, query: str, max_results=5):
+    def search(self, query: str, max_results=10):
         access_token = self.ensure_tokens()
         headers = {"Authorization": f"Bearer {access_token}"}
         params  = {"query": query, "max_results": max_results, "tweet.fields": "author_id"}
         r = requests.get("https://api.twitter.com/2/tweets/search/recent", params=params, headers=headers, timeout=30)
-        print("[X] search result: ", r.status_code, r.json())
+        print("[X] search result: ", r.status_code, r.json() if r.ok else r.text)
+        return r
 
 class CallbackHandler(http.server.BaseHTTPRequestHandler):
     code = None
@@ -198,6 +199,10 @@ def search_on_x(query: str):
     """
     print("Searching with query...", query)
     x = x_client()
-    r = x.search(query)
+    r = x.search(query, max_results=10)
 
-    return r
+    if r.ok:
+        return r.json()
+    else:
+        print("Search failed:", r.status_code, r.text)
+        return {"error": f"Search failed with status {r.status_code}"}
