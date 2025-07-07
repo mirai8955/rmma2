@@ -1,7 +1,7 @@
 from os import getenv
 from dotenv import load_dotenv
 from google.adk.agents import LlmAgent
-from .tools import post_on_x
+from .tools import post_on_x, search_on_x
 
 from . import prompt
 
@@ -19,5 +19,5 @@ posting_agent = LlmAgent(
     ),
     instruction=prompt.RMMA_POSTING_PROMPT,
     output_key="posting_agent_output",
-    tools=[post_on_x],
+    tools=[post_on_x, search_on_x],
 )

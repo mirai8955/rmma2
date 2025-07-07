@@ -11,7 +11,6 @@ import urllib.parse
 import webbrowser
 import http.server
 
-
 class x_client:
     def __init__(self):
         load_dotenv()
@@ -23,11 +22,9 @@ class x_client:
         self.REDIRECT_URI = f"http://127.0.0.1:{self.PORT}/callback"
         self.SCOPE = "tweet.read tweet.write users.read offline.access"
         self.AUTH_URL = "https://twitter.com/i/oauth2/authorize"
-         
 
         if not self.CLIENT_ID or not self.CLIENT_SECRET:
             raise ValueError("X_CLIENT_ID and X_CLIENT_SECRET is not set")
-
         
     def _gen_pkce_pair(self):
         verifier = "".join(secrets.choice(string.ascii_letters + string.digits) for _ in range(64) ) 
@@ -65,8 +62,6 @@ class x_client:
             while CallbackHandler.code is None:
                 httpd.handle_request()
             return CallbackHandler.code
-
-
 
     def _token_request(self, data: dict):
         r = requests.post(self.TOKEN_URL, data=data, auth=(self.CLIENT_ID, self.CLIENT_SECRET), timeout=30) # type: ignore
@@ -106,14 +101,27 @@ class x_client:
         self._save_tokens(tok)
         return tok["access_token"]
 
+    def check_result(self, result, content: str):
+        print("[X] tweet result: ", result.status_code, result.text)
+
+        if result.status_code == 403:
+            print("[X] 403 Error Details:")
+            print(f"    - Content length: {len(content)} characters")
+            print(f"    - Content preview: {content[:100]}...")
+            print("    - This might be due to:")
+            print("      1. App permissions not set to 'Read and Write'")
+            print("      2. Token scope insufficient")
+            print("      3. Content policy violation")
+
+
     def tweet(self, content: str):
         access_token = self.ensure_tokens()
         headers = {"Authorization": f"Bearer {access_token}", "Content-Type": "application/json"}
         r = requests.post("https://api.twitter.com/2/tweets", json={"text": content}, headers=headers, timeout=30)
-        print("[X] tweet result: ", r.status_code, r.text)
-        if r.ok:
-            return r.json()
-        return None
+        self.check_result(r, content)
+
+        return r.json()
+        
 
     def get_tweet_by_id(self, tweet_id: str):
         access_token = self.ensure_tokens()
@@ -132,9 +140,6 @@ class x_client:
         params  = {"query": query, "max_results": max_results, "tweet.fields": "author_id"}
         r = requests.get("https://api.twitter.com/2/tweets/search/recent", params=params, headers=headers, timeout=30)
         print("[X] search result: ", r.status_code, r.json())
-
-
-
 
 class CallbackHandler(http.server.BaseHTTPRequestHandler):
     code = None
@@ -164,7 +169,35 @@ def post_on_x(content: str):
         content: 投稿内容    
     """
     print("Posting the content...", content)
+    
+    # Twitter の文字数制限（280文字）を適用
+    if len(content) > 280:
+        content = content[:277] + "..."
+        print("Content truncated to 280 characters:", content)
+    
+    x = x_client()
+    r = x.tweet(content)
+    
+    if not r:
+        print("Failed to post:", r)
+        return None, content
 
-    post_id = post(content)
-
+    post_id = 1
     return post_id, content
+
+def search_on_x(query: str):
+    """
+    XのAPIを利用してXで投稿を検索するツール．
+
+    Args:
+        query: 検索時のキーワード
+    
+    Returns:
+        content: json形式の検索結果
+          
+    """
+    print("Searching with query...", query)
+    x = x_client()
+    r = x.search(query)
+
+    return r

@@ -113,6 +113,7 @@ if __name__ == "__main__":
     #debug 2
     asyncio.run(
         async_content_generation(
-            "Please generate the content of tweet and post it on X. please use tool calling."
+            "Please generate a short tweet (under 200 characters) about Rakuten Mobile and post it on X. "
+            "Use the post_on_x tool."
         )
     )
