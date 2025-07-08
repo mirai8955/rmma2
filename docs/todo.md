@@ -1,3 +1,4 @@
 - xのコンポーネントを統合する
 - prepare localhost server application
 - make server 
+- x_client クラスの重複を排除する
