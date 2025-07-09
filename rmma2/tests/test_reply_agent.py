@@ -20,11 +20,11 @@ def find_agent(agent, target_name):
         result = find_agent(sub_agent, target_name)
         if result:
             break
-    for tool in agent.tools:
-        if isinstance(tool, AgentTool):
-            result = find_agent(tool.agent, target_name)
-            if result:
-                break
+    # for tool in agent.tools:
+    #     if isinstance(tool, AgentTool):
+    #         result = find_agent(tool.agent, target_name)
+    #         if result:
+    #             break
     return result
 
 

@@ -39,6 +39,3 @@ RMMA_REPLY_PROMPT = f"""
 REPLY_GENERATION_AGENT = f"""
 {reply_generation_agent}
 """
-
-
-print(REPLY_GENERATION_AGENT)
