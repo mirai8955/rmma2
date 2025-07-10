@@ -15,5 +15,9 @@ def x_api_test():
         print("==> Failed to post tweet or extract ID from response.")
 
 
+def x_client_class_test():
+    client=x_client()
+
 if __name__ == "__main__":
     x_api_test()
+    x_client_class_test()

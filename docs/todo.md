@@ -2,3 +2,4 @@
 - prepare localhost server application
 - make server 
 - x_client クラスの重複を排除する
+- Bearer Tokenを利用して特定のアカウントに紐づかないリクエストを送れるようにする．

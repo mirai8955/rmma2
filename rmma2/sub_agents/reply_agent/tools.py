@@ -25,6 +25,9 @@ class x_client:
 
         if not self.CLIENT_ID or not self.CLIENT_SECRET:
             raise ValueError("X_CLIENT_ID and X_CLIENT_SECRET is not set")
+
+        print(self.CLIENT_ID)
+        print(self.CLIENT_SECRET)
         
     def _gen_pkce_pair(self):
         verifier = "".join(secrets.choice(string.ascii_letters + string.digits) for _ in range(64) ) 
@@ -134,6 +137,21 @@ class x_client:
             print("[X] Failed to fetch tweet:", r.text)
         return r
 
+    def reply_to_tweet(self, content: str, tweet_id_to_reply_to: str):
+        access_token = self.ensure_tokens()
+        headers = {"Authorization": f"Bearer {access_token}", "Content-Type": "application/json"}
+        payload = {
+            "text": content,
+            "reply": {
+                "in_reply_to_tweet_id": tweet_id_to_reply_to
+            }
+        }
+        r = requests.post("https://api.twitter.com/2/tweets", json=payload, headers=headers, timeout=30)
+        print(f"[X] replied tweet: {r.status_code}", r.text)
+        if r.ok:
+            return r.json()
+        return None
+
     def search(self, query: str, max_results=10):
         access_token = self.ensure_tokens()
         headers = {"Authorization": f"Bearer {access_token}"}
@@ -185,6 +203,22 @@ def post_on_x(content: str):
 
     post_id = 1
     return post_id, content
+
+def reply_on_x(content: str, tweet_id: str):
+    """
+    指定されたtweet_idの投稿に対して返信を行うツール。
+
+    Args:
+        content (str): 返信する投稿内容。
+        tweet_id (str): 返信先のツイートID。
+
+    Returns:
+        dict | None: 投稿結果。成功すればツイート情報、失敗すればNone。
+    """
+    print(f"Replying to tweet {tweet_id} with content: {content}")
+    client = x_client()
+    response = client.reply_to_tweet(content, tweet_id)
+    return response
 
 def search_on_x(query: str):
     """

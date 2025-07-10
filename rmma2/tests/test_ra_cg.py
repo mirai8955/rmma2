@@ -1,3 +1,5 @@
+"""test reply agent search and content generation only"""
+
 import asyncio
 import json
 
@@ -66,6 +68,7 @@ async def async_content_generation(prompt):
         session_id=session.id, user_id="rmma01", new_message=content
     )
 
+    total_token = 0
     async for event in events_async:
         
         if not event.content:
@@ -82,8 +85,9 @@ async def async_content_generation(prompt):
         ]
 
         if event.usage_metadata:
-            total_token = event.usage_metadata.total_token_count
-            print("Total token is ", total_token)
+            if event.usage_metadata.total_token_count is not None:
+                total_token = total_token + event.usage_metadata.total_token_count
+                print("Total token is ", total_token)
 
         if event.content.parts[0].text:
             text_response = event.content.parts[0].text
@@ -113,6 +117,6 @@ if __name__ == "__main__":
     #debug 4
     asyncio.run(
         async_content_generation(
-            "節税をしている楽天モバイルの潜在顧客をXの投稿から探して，その投稿内容に対する返信を考えてほしい"
+            "楽天モバイルの潜在顧客をXの投稿から探して，その投稿内容に対する返信を考えてほしい"
         )
     )
