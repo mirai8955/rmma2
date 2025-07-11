@@ -2,7 +2,7 @@ from google.adk.agents import LlmAgent, SequentialAgent
 from .prompt import REPLY_GENERATION_AGENT, RMMA_REPLY_PROMPT,  TWEET_SEARCH_AGENT_PROMPT, REPLY_POST_AGENT
 from os import getenv
 from dotenv import load_dotenv
-from .tools import post_on_x, search_on_x, reply_on_x
+from rmma2.sub_agents.posting_agent.tools import search_on_x, reply_on_x
 
 load_dotenv()
 MODEL = getenv("MODEL")
