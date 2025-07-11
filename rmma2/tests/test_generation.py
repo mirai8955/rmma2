@@ -95,16 +95,16 @@ async def async_content_generation(prompt):
                     f"\n[{author}]: {function_call.name}( {json.dumps(function_call.args)})"
                 )
 
-        elif function_responses:
-            for function_response in function_responses:
-                function_name = function_response.name
-                application_payload = function_response.text_response
-                if  function_name == "airbnb_search":
-                    application_payload = application_payload["result"].content[0].text
+        # elif function_responses:
+        #     for function_response in function_responses:
+        #         function_name = function_response.name
+        #         application_payload = function_response.text_response
+        #         if  function_name == "airbnb_search":
+        #             application_payload = application_payload["result"].content[0].text
                     
-                print(
-                    f"\n[{author}]: {function_name} responds -> {application_payload}"
-                )
+        #         print(
+        #             f"\n[{author}]: {function_name} responds -> {application_payload}"
+        #         )
 
 
 if __name__ == "__main__":
