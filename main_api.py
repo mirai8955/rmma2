@@ -17,8 +17,7 @@ class AgentRequest(BaseModel):
     prompt: str
 
 def log(logger, method, request_url, user_agent):
-    logger.info(f"[{method}] {request_url}"
-                f"[user_agent]: {user_agent}")
+    logger.info(f"[{method}] {request_url} [user_agent]: {user_agent}")
 
 @app.get("/", summary="APIのヘルスチェック")
 async def read_root():
@@ -59,7 +58,7 @@ async def run_agent_stream(agent_request: AgentRequest, request: Request):
         """
         エージェントの実行プロセスをリアルタイムでクライアントにストリーミングします。
         """
-        logger = get_logger("rmma.rmma2")
+        logger = get_logger("rmma")
         user_agent = request.headers.get("User-Agent", "Unknown")
         method = request.method
         request_url = str(request.url)
