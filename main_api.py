@@ -1,7 +1,8 @@
 import asyncio
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
+from log.rmma_logger import get_logger
 
 from main import async_content_generation, stream_run_agent
 
@@ -15,6 +16,9 @@ class AgentRequest(BaseModel):
     agent_name: str
     prompt: str
 
+def log(logger, method, request_url, user_agent):
+    logger.info(f"[{method}] {request_url}"
+                f"[user_agent]: {user_agent}")
 
 @app.get("/", summary="APIのヘルスチェック")
 async def read_root():
@@ -51,12 +55,17 @@ async def run_agnet(request: AgentRequest):
         raise HTTPException(status_code=500, detail=f"エージェントの実行中にエラーが発生しました: {str(e)}")
 
 @app.post("/agent/stream", summary="エージェントの応答をストリーミングで返す")
-async def run_agent_stream(request: AgentRequest):
+async def run_agent_stream(agent_request: AgentRequest, request: Request):
         """
         エージェントの実行プロセスをリアルタイムでクライアントにストリーミングします。
         """
-        print("Recieve request")
+        logger = get_logger("rmma.rmma2")
+        user_agent = request.headers.get("User-Agent", "Unknown")
+        method = request.method
+        request_url = str(request.url)
+        log(logger, method, request_url, user_agent)
+        # print("Recieve request")
         return StreamingResponse(
-            stream_run_agent(request.prompt),
+            stream_run_agent(agent_request.prompt),
             media_type="text/plain-stream"
         )
