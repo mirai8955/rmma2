@@ -39,6 +39,21 @@ def get_agent():
     return root_agent
 
 
+async def stream_run_agent(prompt: str):
+    try:
+        yield "rmmaの実行を開始します...\n"
+    
+        yield "プロセスが正常に終了しました．"
+
+    except Exception as e:
+        error_json = json.dumps({
+            "type": "error",
+            "message": "エージェント実行中にエラーが発生しました．",
+            "detail": str(e)
+        })
+        yield f"event: error\ndata: {error_json}\n\n"
+
+
 async def async_content_generation(prompt):
     
     session_service = InMemorySessionService()
