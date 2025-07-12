@@ -71,7 +71,7 @@ async def stream_run_agent(prompt: str):
 
         runner = Runner(
             app_name="rmma",
-            agent = agent,
+            agent=agent,
             artifact_service=artifacts_service,
             session_service=session_service,
         )

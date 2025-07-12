@@ -3,6 +3,7 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 from log.rmma_logger import get_logger
+from rmma2.agent_manager import AgentManager
 
 from main import async_content_generation, stream_run_agent
 
@@ -66,5 +67,25 @@ async def run_agent_stream(agent_request: AgentRequest, request: Request):
         # print("Recieve request")
         return StreamingResponse(
             stream_run_agent(agent_request.prompt),
+            media_type="text/plain-stream"
+        )
+
+
+
+@app.post("/agent/stream/test", summary="エージェントの応答をストリーミングで返す")
+async def run_agent_stream(agent_request: AgentRequest, request: Request):
+        """
+        エージェントの実行プロセスをリアルタイムでクライアントにストリーミングします。
+        """
+        logger = get_logger("rmma")
+        user_agent = request.headers.get("User-Agent", "Unknown")
+        method = request.method
+        request_url = str(request.url)
+        log(logger, method, request_url, user_agent)
+        
+        AM = AgentManager(agent_request.agent_name)
+
+        return StreamingResponse(
+            AM.generate_content(agent_request.prompt),
             media_type="text/plain-stream"
         )
