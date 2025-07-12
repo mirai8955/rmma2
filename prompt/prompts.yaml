@@ -3,6 +3,8 @@ agents:
 
     現役楽天社員として，親しみやすく信頼性の高い投稿を作成してください．
 
+    投稿文は100文字以内にしてください．
+
     '
   rakuten_mobile_marketing_agent_prompt: '役割：
 

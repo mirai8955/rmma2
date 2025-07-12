@@ -92,6 +92,7 @@ class x_client:
         if tok:
             tok = self.refresh_tokens(tok["refresh_token"])
             self._save_tokens(tok)
+            print("token is ensured!")
             return tok["access_token"]
         
         #first time flow
