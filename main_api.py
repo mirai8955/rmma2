@@ -1,5 +1,6 @@
 import asyncio
-from fastapi import FastAPI, HTTPException, StreamingResponse
+from fastapi import FastAPI, HTTPException
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 
 from main import async_content_generation, stream_run_agent
@@ -54,8 +55,8 @@ async def run_agent_stream(request: AgentRequest):
         """
         エージェントの実行プロセスをリアルタイムでクライアントにストリーミングします。
         """
-
+        print("Recieve request")
         return StreamingResponse(
-            stream_run_agent(request.prompt)
+            stream_run_agent(request.prompt),
             media_type="text/plain-stream"
         )
