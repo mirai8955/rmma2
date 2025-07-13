@@ -6,6 +6,19 @@ from log.rmma_logger import get_logger
 from rmma2.agent import rmma
 import json
 
+def find_agent(array, agent):
+    array.append(agent.name)
+    for sub_agent in agent.sub_agents:
+        find_agent(array, sub_agent)
+    return array
+
+
+def get_agent_all():
+    result = []
+    root_agent = rmma
+    find_agent(result, root_agent)
+    return result
+
 class AgentManager:
     def __init__(self, agent_name: str):
         self.runner = None
@@ -79,7 +92,7 @@ class AgentManager:
 
                 if function_calls:
                     for function_call in function_calls:
-                        message = f"\n[{author}]: {function_call.name}( {json.dumps(function_call.args)})"
+                        message = f"\n[{author}]: {function_call.name}( {json.dumps(function_call.args, ensure_ascii=False)})"
                         self.logger.info(message)
                         yield message
 

@@ -3,9 +3,11 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 from log.rmma_logger import get_logger
-from rmma2.agent_manager import AgentManager
+from rmma2.agent_manager import AgentManager, get_agent_all
+import json
+from prompt.prompt_manager import PromptManager
 
-from main import async_content_generation, stream_run_agent
+# from main import async_content_generation, stream_run_agent
 
 app = FastAPI(
     title="RMMA = Rakuten Mobile Marketing Agent API",
@@ -28,35 +30,41 @@ async def read_root():
     return {"status": "ok", "message": "RMMA API is running!"}
 
 
-@app.post("/agent", summary="Agentの使用")
-async def run_agnet(request: AgentRequest):
-    """
-    指定されたプロンプトとエージェント名に基づいて，エージェントを実行します．
-    """
-    if not request.agent_name:
-        raise HTTPException(status_code=400, detail="agent_name can't be None")
+# @app.post("/agent", summary="Agentの使用")
+# async def run_agnet(request: AgentRequest):
+#     """
+#     指定されたプロンプトとエージェント名に基づいて，エージェントを実行します．
+#     """
+#     if not request.agent_name:
+#         raise HTTPException(status_code=400, detail="agent_name can't be None")
 
-    if not request.prompt:
-        raise HTTPException(status_code=400, detail="prompt can't be None")
+#     if not request.prompt:
+#         raise HTTPException(status_code=400, detail="prompt can't be None")
 
-    try:
-        await async_content_generation(request.prompt)
+#     try:
+#         await async_content_generation(request.prompt)
 
-        final_output = "完了しました"
+#         final_output = "完了しました"
 
-        return {
-            "status": "success",
-            "message": "エージェントの実行が完了しました",
-            "result": final_output
-        }
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"エージェントの実行中にエラーが発生しました: {str(e)}")
+#         return {
+#             "status": "success",
+#             "message": "エージェントの実行が完了しました",
+#             "result": final_output
+#         }
+#     except Exception as e:
+#         raise HTTPException(status_code=500, detail=f"エージェントの実行中にエラーが発生しました: {str(e)}")
 
-@app.post("/agent/stream", summary="エージェントの応答をストリーミングで返す")
+@app.post("/agent", summary="エージェントの応答をストリーミングで返す")
 async def run_agent_stream(agent_request: AgentRequest, request: Request):
         """
         エージェントの実行プロセスをリアルタイムでクライアントにストリーミングします。
         """
+        if not agent_request.agent_name:
+            raise HTTPException(status_code=400, detail="agent_name can't be None")
+
+        if not agent_request.prompt:
+            raise HTTPException(status_code=400, detail="prompt can't be None")
+
         logger = get_logger("rmma")
         user_agent = request.headers.get("User-Agent", "Unknown")
         method = request.method
@@ -68,3 +76,39 @@ async def run_agent_stream(agent_request: AgentRequest, request: Request):
             agent_manager.run_stream_agent(agent_request.prompt),
             media_type="text/plain"
         )
+
+@app.get("/agent/lists", summary="利用可能なエージェントのリストを返す")
+def get_agent_list(request: Request):
+    logger = get_logger()
+    log(
+        logger,
+        request.method,
+        str(request.url),
+        request.headers.get("User-Agent", "Unknown")
+    )
+
+    agents = get_agent_all()
+
+    return {
+        "status": "success",
+        "result": json.dumps(agents, ensure_ascii=False)
+    }
+
+@app.get("/prompt/lists", summary="全てのプロンプトを返す")
+def get_prompt_list(request: Request):
+    logger = get_logger()
+    log(
+        logger,
+        request.method,
+        str(request.url),
+        request.headers.get("User-Agent", "Unknown")
+    )
+
+    PM = PromptManager()
+    prompts = PM.get_prompt_all()
+    
+    return {
+        "result": json.dumps(prompts, ensure_ascii=False)
+    }
+
+
