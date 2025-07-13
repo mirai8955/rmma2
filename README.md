@@ -1,26 +1,26 @@
-# rmma-2
+# rmma-2 api
 
 First, please install the dependencies:
-```bash
+```zsh
 pip install -r requirements.txt
 ```
 
 Then, configure the environment variables. Create a file named .env in the current directory and copy the contents from .env.example. Modify the values of these environment variables according to your requirements:
-```bash
+```zsh
 cp .env.example .env.local
 ```
 
 Export your google api key
-```bash
+```zsh
 export GOOGLE_API_KEY="your api key here"
 ```
 
 Create x api token by run this command 
-```bash
-
+```zsh
+python -m x.activate
 ```
 
 Run server
-```bash
+```zsh
 uvicorn main_api:app
 ```
