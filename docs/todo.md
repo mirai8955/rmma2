@@ -1,8 +1,11 @@
-- xのコンポーネントを統合する
+- ✅ xのコンポーネントを統合する
 - prepare localhost server application
-- make server 
+- ✅ make server 
 - ✅ x_client クラスの重複を排除する
 - Bearer Tokenを利用して特定のアカウントに紐づかないリクエストを送れるようにする．
-- loggerを実装する
+- ✅ loggerを実装する
 - apiを実装する．
 - rmmaのクラスを作成する．
+- logとlogsの重複を排除する
+- logをmonitoringしやすいように整形する
+- システム全体でのログを集約するクラスを作成し，クライアント側にも詳細debug情報をyield返却する．
