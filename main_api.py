@@ -39,9 +39,7 @@ async def run_agnet(request: AgentRequest):
     if not request.prompt:
         raise HTTPException(status_code=400, detail="prompt can't be None")
 
-
     try:
-            
         await async_content_generation(request.prompt)
 
         final_output = "完了しました"
@@ -64,28 +62,9 @@ async def run_agent_stream(agent_request: AgentRequest, request: Request):
         method = request.method
         request_url = str(request.url)
         log(logger, method, request_url, user_agent)
-        # print("Recieve request")
-        return StreamingResponse(
-            stream_run_agent(agent_request.prompt),
-            media_type="text/plain-stream"
-        )
-
-
-
-@app.post("/agent/stream/test", summary="エージェントの応答をストリーミングで返す")
-async def run_agent_stream(agent_request: AgentRequest, request: Request):
-        """
-        エージェントの実行プロセスをリアルタイムでクライアントにストリーミングします。
-        """
-        logger = get_logger("rmma")
-        user_agent = request.headers.get("User-Agent", "Unknown")
-        method = request.method
-        request_url = str(request.url)
-        log(logger, method, request_url, user_agent)
         
-        AM = AgentManager(agent_request.agent_name)
-
+        agent_manager = AgentManager(agent_request.agent_name)
         return StreamingResponse(
-            AM.generate_content(agent_request.prompt),
-            media_type="text/plain-stream"
+            agent_manager.run_stream_agent(agent_request.prompt),
+            media_type="text/plain"
         )
