@@ -33,7 +33,7 @@ def find_agent(agent, target_name):
 def get_agent():
     print("Inserting RMMA Agent")
     root_agent = rmma
-    creator = find_agent(root_agent, "rakuten_mobile_marketing_agent")
+    creator = find_agent(root_agent, "rmma")
     if creator:
         print("FOUND", creator.name)
     else:

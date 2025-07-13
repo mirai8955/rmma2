@@ -11,7 +11,7 @@ MODEL = getenv("MODEL")
 
 posting_agent = LlmAgent(
     model=MODEL,
-    name="posting_agent",
+    name="PostingAgent",
     description=(
         "楽天モバイルの新規契約獲得のための投稿内容を考え，"
         "虚偽の投稿を生成していないかをチェックし，"

@@ -5,6 +5,8 @@
 - Bearer Tokenを利用して特定のアカウントに紐づかないリクエストを送れるようにする．
 - ✅ loggerを実装する
 - apiを実装する．
+    - promptsとagentのリストを返却するapiを作成する
+    - 鍵を設定できるようにする
 - rmmaのクラスを作成する．
 - logとlogsの重複を排除する
 - logをmonitoringしやすいように整形する

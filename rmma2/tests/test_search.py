@@ -31,7 +31,7 @@ def find_agent(agent, target_name):
 def get_agent():
     print("Inserting Posting Agent")
     root_agent = rmma
-    creator = find_agent(root_agent, "posting_agent")
+    creator = find_agent(root_agent, "PostingAgent")
     if creator:
         print("FOUND", creator.name)
     else:

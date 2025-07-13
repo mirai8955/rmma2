@@ -7,7 +7,7 @@ from rmma2.sub_agents.reply_agent.agent import reply_pipeline_agent
 MODEL = "gemini-2.5-flash"
 
 rmma = LlmAgent(
-    name="rakuten_mobile_marketing_agent",
+    name="RMMA",
     model=MODEL,
     description=(
     "楽天モバイルに関するキャンペーン情報を調べ、"

@@ -202,3 +202,20 @@
 2025-07-13 15:30:35 - rmma - INFO - [X] replied tweet: 201 {"data":{"text":"@august_tom87667 物価高の今、スマホ代の節約は本当に重要ですよね！楽天モバイルならデータ利用量に合わせた段階制料金で、使った分だけだから無駄がありません✨さらに、楽天ポイントも貯まって月々の支払いに使えるので、賢く通信費を抑えられますよ！ぜひご検討ください\uD83D\uDE0A","id":"1944283296437088275","edit_history_tweet_ids":["1944283296437088275"]}}
 2025-07-13 15:30:36 - rmma - INFO - 
 [ReplyPostAgent]: 返信を送信しました。
+2025-07-13 15:47:19 - rmma - INFO - [POST] http://localhost:8000/agent/stream [user_agent]: curl/8.7.1
+2025-07-13 15:47:19 - rmma - INFO - Inserting Agent
+2025-07-13 15:47:19 - rmma - INFO - Matching...rakuten_mobile_marketing_agent
+2025-07-13 15:47:19 - rmma - INFO - Searching...posting_agent
+2025-07-13 15:47:19 - rmma - INFO - Matching...posting_agent
+2025-07-13 15:47:19 - rmma - INFO - Agent found
+2025-07-13 15:47:19 - rmma - INFO - Created session with ID: e553861b-505f-4fdb-aebd-6e2d497338ef
+2025-07-13 15:47:19 - rmma - INFO - Runner set.
+2025-07-13 15:47:22 - rmma - INFO - 
+[posting_agent]: 楽天モバイルは、データ使い放題で月額料金もお得！さらに、楽天ポイントも貯まります✨乗り換えも簡単なので、ぜひご検討くださいね📱
+#楽天モバイル #お得
+2025-07-13 20:59:44 - rmma - INFO - [GET] http://localhost:8000/agent/lists [user_agent]: curl/8.7.1
+2025-07-13 21:06:37 - rmma - INFO - [GET] http://localhost:8000/agent/lists [user_agent]: curl/8.7.1
+2025-07-13 21:06:47 - rmma - INFO - [GET] http://localhost:8000/agent/lists [user_agent]: curl/8.7.1
+2025-07-13 21:11:33 - rmma - INFO - [GET] http://localhost:8000/agent/lists [user_agent]: curl/8.7.1
+2025-07-13 21:56:03 - rmma - INFO - [GET] http://localhost:8000/prompt/lists [user_agent]: curl/8.7.1
+2025-07-13 21:58:37 - rmma - INFO - [GET] http://localhost:8000/prompt/lists [user_agent]: curl/8.7.1
