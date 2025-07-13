@@ -10,7 +10,7 @@ load_dotenv()
 MODEL = getenv("MODEL")
 
 posting_agent = LlmAgent(
-    model=MODEL,
+    model=MODEL or "gemini-2.5-flash",
     name="PostingAgent",
     description=(
         "楽天モバイルの新規契約獲得のための投稿内容を考え，"

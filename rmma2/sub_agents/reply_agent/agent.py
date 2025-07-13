@@ -9,7 +9,7 @@ MODEL = getenv("MODEL")
 
 tweet_search_agent = LlmAgent(
     name="TweetSearchAgent",
-    model=MODEL,
+    model=MODEL or "gemini-2.5-flash",
     description="XのAPIを使用して投稿を検索するエージェント",
     instruction=TWEET_SEARCH_AGENT_PROMPT,
     output_key="search_result",
@@ -29,7 +29,7 @@ tweet_search_agent = LlmAgent(
 
 reply_generation_agent = LlmAgent(
     name="ReplyGenerationAgent",
-    model=MODEL,
+    model=MODEL or "gemini-2.5-flash",
     description="検索結果から楽天モバイルをおすすめする返信を考えるエージェント",
     instruction=REPLY_GENERATION_AGENT,
     output_key="reply_content"
@@ -37,7 +37,7 @@ reply_generation_agent = LlmAgent(
 
 reply_post_agent = LlmAgent(
     name="ReplyPostAgent",
-    model=MODEL,
+    model=MODEL or "gemini-2.5-flash",
     description="生成した文章で実際に返信を実行するエージェント",
     instruction=REPLY_POST_AGENT,
     tools=[reply_on_x],
