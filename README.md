@@ -10,6 +10,16 @@ Then, configure the environment variables. Create a file named .env in the curre
 cp .env.example .env.local
 ```
 
+Export your google api key
+```bash
+export GOOGLE_API_KEY="your api key here"
+```
+
+Create x api token by run this command 
+```bash
+
+```
+
 Run server
 ```bash
 uvicorn main_api:app
