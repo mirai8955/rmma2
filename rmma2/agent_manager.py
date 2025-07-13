@@ -14,8 +14,6 @@ class AgentManager:
         self.agent = self.get_agent(agent_name)
         self.agent_name = agent_name
         
-        
-
     def find_agent(self, agent, target_name):
         result = None
         self.logger.info(f"Matching...{agent.name}")
@@ -105,7 +103,6 @@ class AgentManager:
             async for message in self.monitor_llm(events_async):
                 yield message
 
-            
         else:
             self.logger.error("Runner is not set")
             yield "Error: Runner is not set"

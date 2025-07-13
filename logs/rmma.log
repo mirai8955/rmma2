@@ -156,3 +156,49 @@
 2025-07-13 14:47:36 - rmma - INFO - 
 [ReplyPostAgent]: 楽天モバイルに関する投稿の検索に失敗し、返信対象となる投稿が特定できなかったため、返信を実行できません。
 `target_tweet_info`が空であるため、`reply_on_x`ツールを実行するために必要な`tweet_id`が利用できません。
+2025-07-13 15:30:15 - rmma - INFO - [POST] http://localhost:8000/agent/stream [user_agent]: curl/8.7.1
+2025-07-13 15:30:15 - rmma - INFO - Inserting Agent
+2025-07-13 15:30:15 - rmma - INFO - Matching...rakuten_mobile_marketing_agent
+2025-07-13 15:30:15 - rmma - INFO - Searching...posting_agent
+2025-07-13 15:30:15 - rmma - INFO - Matching...posting_agent
+2025-07-13 15:30:15 - rmma - INFO - Searching...ReplyPipelineAgent
+2025-07-13 15:30:15 - rmma - INFO - Matching...ReplyPipelineAgent
+2025-07-13 15:30:15 - rmma - INFO - Searching...TweetSearchAgent
+2025-07-13 15:30:15 - rmma - INFO - Matching...TweetSearchAgent
+2025-07-13 15:30:15 - rmma - INFO - Searching...ReplyGenerationAgent
+2025-07-13 15:30:15 - rmma - INFO - Matching...ReplyGenerationAgent
+2025-07-13 15:30:15 - rmma - INFO - Searching...ReplyPostAgent
+2025-07-13 15:30:15 - rmma - INFO - Matching...ReplyPostAgent
+2025-07-13 15:30:15 - rmma - ERROR - Agent was not found.
+2025-07-13 15:30:15 - rmma - INFO - Created session with ID: e47461ff-7736-44ad-ae60-ce76490dfbd0
+2025-07-13 15:30:15 - rmma - INFO - Runner set.
+2025-07-13 15:30:17 - rmma - INFO - 
+[rakuten_mobile_marketing_agent]: transfer_to_agent( {"agent_name": "ReplyPipelineAgent"})
+2025-07-13 15:30:19 - rmma - INFO - 
+[TweetSearchAgent]: search_on_x( {"query": "\u697d\u5929\u30e2\u30d0\u30a4\u30eb"})
+2025-07-13 15:30:19 - rmma - INFO - Searching with query...楽天モバイル
+2025-07-13 15:30:19 - rmma - INFO - token is ensured!
+2025-07-13 15:30:19 - rmma - INFO - [X] search result: 200 {'data': [{'text': 'RT @Rakuten__Eagles: 2025.7.13 vs.福岡ソフトバンク\n予告先発：#69 内星龍\n\n【1打席速報】\nhttps://t.co/37WKY4XLC8\n【公式アプリ】\nhttps://t.co/ihzj5IciHw\n【放映情報】\nhttps://t.c…', 'edit_history_tweet_ids': ['1944283047219917192'], 'author_id': '1452146966876491779', 'id': '1944283047219917192'}, {'text': '七夕賞🎋\n\nドゥラドーレス推しで！！\n戸崎圭頼んだ🐎🐎\n\n最大14,000ptもらえるキャンペーンエントリーしました💰？\n楽天モバイルキャンペーン実施中！\n🪙乗換14,000/新規7,000 ゲット！\n\n▼キャンペーンエントリー、詳細はこちら\nhttps://t.co/LxTEwV4MMe\n\n#競馬予想\u3000#七夕賞 https://t.co/UeWGJESpZx', 'edit_history_tweet_ids': ['1944283034133635128'], 'author_id': '1922497601859158017', 'id': '1944283034133635128'}, {'text': '-\n楽天モバイルご契約で楽天ポイントプレゼント！\n\nキャンペーン詳細はプロフィール欄にて掲載中です！\n\n※楽天会員にログインまたは新規登録後、条件説明ページに移動します。 https://t.co/gcRUtbxyFa', 'edit_history_tweet_ids': ['1944282949689683975'], 'author_id': '2514012258', 'id': '1944282949689683975'}, {'text': '昨今の物価高😖\n楽天モバイルで今こそ賢くスマホ代を節約‼\nポイントも貯まって月額支払いにも使えますよ💰\n\nご検討・お申込にまずはエントリーから👇\nご契約で最大14,000㌽🎁紹介リンク\nhttps://t.co/d5N5uMHWIG\n※楽天IDでログイン\n\nUQﾓﾊﾞｲﾙ,LINEMO,ﾜｲﾓﾊﾞｲﾙ docomo Softbank au https://t.co/zV338Qkisd', 'edit_history_tweet_ids': ['1944282896904204557'], 'author_id': '1865046401576767493', 'id': '1944282896904204557'}, {'text': 'え❓\nまだ乗り換えてない❓\n楽天モバイルお得🉐なの知らない❓\n\nまずは詳細チェックしてみてください❤\n今なら従業員紹介キャンペーンもやってまーす🥳\n\n👇専用URL👇\nhttps://t.co/2Vr0TYYQV6', 'edit_history_tweet_ids': ['1944282896782561454'], 'author_id': '1460884034016677889', 'id': '1944282896782561454'}, {'text': '函館1R、予想的中🎯したけど、データ無制限ってやっぱり凄いな🤔\n楽天モバイル最強プランでパ・リーグも観れるし、もっと自由に動けるかな？[楽天モバイル最強プランURL]\nhttps://t.co/0ocmPJ52AB', 'edit_history_tweet_ids': ['1944282874875715895'], 'author_id': '1937116852926267393', 'id': '1944282874875715895'}, {'text': 'RT @Rakuten_Pacific: 【試合速報📣】\n#sbhawks #プロ野球  #楽天TV #RakutenTV\n\nE-H\u30006回裏\n#福岡ソフトバンク「#前田悠伍 投手」\n無死一二塁のピンチを招くもトリプルプレーで無失点に切り抜ける‼️\n\n👇配信中の試合はコチラから⚡…', 'edit_history_tweet_ids': ['1944282822510096855'], 'author_id': '1733119197813833728', 'id': '1944282822510096855'}, {'text': 'RT @Rakuten_Pacific: 【試合速報📣】\n#sbhawks #プロ野球  #楽天TV #RakutenTV\n\nE-H\u30006回裏\n#福岡ソフトバンク「#前田悠伍 投手」\n無死一二塁のピンチを招くもトリプルプレーで無失点に切り抜ける‼️\n\n👇配信中の試合はコチラから⚡…', 'edit_history_tweet_ids': ['1944282787353440372'], 'author_id': '1789390651463016448', 'id': '1944282787353440372'}, {'text': '楽天モバイル 携帯\n\n固定回線 通信量 確認 https://t.co/dom5P6wTyz', 'edit_history_tweet_ids': ['1944282763244581291'], 'author_id': '1735362260355432448', 'id': '1944282763244581291'}, {'text': 'RT @Rakuten_Pacific: 【試合速報📣】\n#Bs2025 #プロ野球 #楽天TV #RakutenTV\n\nF-B\u30003回裏\n#オリックス「#紅林弘太郎 選手」\n逆シングルから反転ジャンピングスロー❗️ナイスプレー👏\n\n👇配信中の試合はコチラから⚡\nhttps://…', 'edit_history_tweet_ids': ['1944282747243249924'], 'author_id': '232830085', 'id': '1944282747243249924'}], 'meta': {'newest_id': '1944283047219917192', 'oldest_id': '1944282747243249924', 'result_count': 10, 'next_token': 'b26v89c19zqg8o3fsc87c35urz1t93lu576obydq9rhx9'}}
+2025-07-13 15:30:27 - rmma - INFO - 
+[TweetSearchAgent]: ```json
+{"search_on_x_response": {"data": [{"author_id": "1452146966876491779", "edit_history_tweet_ids": ["1944283047219917192"], "id": "1944283047219917192", "text": "RT @Rakuten__Eagles: 2025.7.13 vs.福岡ソフトバンク\n予告先発：#69 内星龍\n\n【1打席速報】\nhttps://t.co/37WKY4XLC8\n【公式アプリ】\nhttps://t.co/ihzj5IciHw\n【放映情報】\nhttps://t.c…"}, {"author_id": "1922497601859158017", "edit_history_tweet_ids": ["1944283034133635128"], "id": "1944283034133635128", "text": "七夕賞🎋\n\nドゥラドーレス推しで！！\n戸崎圭頼んだ🐎🐎\n\n最大14,000ptもらえるキャンペーンエントリーしました💰？\n楽天モバイルキャンペーン実施中！\n🪙乗換14,000/新規7,000 ゲット！\n\n▼キャンペーンエントリー、詳細はこちら\nhttps://t.co/LxTEwV4MMe\n\n#競馬予想　#七夕賞 https://t.co/UeWGJESpZx"}, {"author_id": "2514012258", "edit_history_tweet_ids": ["1944282949689683975"], "id": "1944282949689683975", "text": "-\n楽天モバイルご契約で楽天ポイントプレゼント！\n\nキャンペーン詳細はプロフィール欄にて掲載中です！\n\n※楽天会員にログインまたは新規登録後、条件説明ページに移動します。 https://t.co/gcRUtbxyFa"}, {"author_id": "1865046401576767493", "edit_history_tweet_ids": ["1944282896904204557"], "id": "1944282896904204557", "text": "昨今の物価高😖\n楽天モバイルで今こそ賢くスマホ代を節約‼\nポイントも貯まって月額支払いにも使えますよ💰\n\nご検討・お申込にまずはエントリーから👇\nご契約で最大14,000㌽🎁紹介リンク\nhttps://t.co/d5N5uMHWIG\n※楽天IDでログイン\n\nUQﾓﾊﾞｲﾙ,LINEMO,ﾜｲﾓﾊﾞｲﾙ docomo Softbank au https://t.co/zV338Qkisd"}, {"author_id": "1460884034016677889", "edit_history_tweet_ids": ["1944282896782561454"], "id": "1944282896782561454", "text": "え❓\nまだ乗り換えてない❓\n楽天モバイルお得🉐なの知らない❓\n\nまずは詳細チェックしてみてください❤\n今なら従業員紹介キャンペーンもやってまーす🥳\n\n👇専用URL👇\nhttps://t.co/2Vr0TYYQV6"}, {"author_id": "1937116852926267393", "edit_history_tweet_ids": ["1944282874875715895"], "id": "1944282874875715895", "text": "函館1R、予想的中🎯したけど、データ無制限ってやっぱり凄いな🤔\n楽天モバイル最強プランでパ・リーグも観れるし、もっと自由に動けるかな？[楽天モバイル最強プランURL]\nhttps://t.co/0ocmPJ52AB"}, {"author_id": "1733119197813833728", "edit_history_tweet_ids": ["1944282822510096855"], "id": "1944282822510096855", "text": "RT @Rakuten_Pacific: 【試合速報📣】\n#sbhawks #プロ野球  #楽天TV #RakutenTV\n\nE-H　6回裏\n#福岡ソフトバンク「#前田悠伍 投手」\n無死一二塁のピンチを招くもトリプルプレーで無失点に切り抜ける‼️\n\n👇配信中の試合はコチラから⚡…"}, {"author_id": "1789390651463016448", "edit_history_tweet_ids": ["1944282787353440372"], "id": "1944282787353440372", "text": "RT @Rakuten_Pacific: 【試合速報📣】\n#sbhawks #プロ野球  #楽天TV #RakutenTV\n\nE-H　6回裏\n#福岡ソフトバンク「#前田悠伍 投手」\n無死一二塁のピンチを招くもトリプルプレーで無失点に切り抜ける‼️\n\n👇配信中の試合はコチラから⚡…"}, {"author_id": "1735362260355432448", "edit_history_tweet_ids": ["1944282763244581291"], "id": "1944282763244581291", "text": "楽天モバイル 携帯\n\n固定回線 通信量 確認 https://t.co/dom5P6wTyz"}, {"author_id": "232830085", "edit_history_tweet_ids": ["1944282747243249924"], "id": "1944282747243249924", "text": "RT @Rakuten_Pacific: 【試合速報📣】\n#Bs2025 #プロ野球 #楽天TV #RakutenTV\n\nF-B　3回裏\n#オリックス「#紅林弘太郎 選手」\n逆シングルから反転ジャンピングスロー❗️ナイスプレー👏\n\n👇配信中の試合はコチラから⚡\nhttps://…"}], "meta": {"newest_id": "1944283047219917192", "next_token": "b26v89c19zqg8o3fsc87c35urz1t93lu576obydq9rhx9", "oldest_id": "1944282747243249924", "result_count": 10}}}
+```
+2025-07-13 15:30:33 - rmma - INFO - 
+[ReplyGenerationAgent]: **返信する投稿の情報**
+```json
+{
+  "id": "1944282896904204557",
+  "author_id": "1865046401576767493",
+  "text": "昨今の物価高😖\n楽天モバイルで今こそ賢くスマホ代を節約‼\nポイントも貯まって月額支払いにも使えますよ💰\n\nご検討・お申込にまずはエントリーから👇\nご契約で最大14,000㌽🎁紹介リンク\nhttps://t.co/d5N5uMHWIG\n※楽天IDでログイン\n\nUQﾓﾊﾞｲﾙ,LINEMO,ﾜｲﾓﾊﾞｲﾙ docomo Softbank au https://t.co/zV338Qkisd"
+}
+```
+
+**返信文**
+物価高の今、スマホ代の節約は本当に重要ですよね！楽天モバイルならデータ利用量に合わせた段階制料金で、使った分だけだから無駄がありません✨さらに、楽天ポイントも貯まって月々の支払いに使えるので、賢く通信費を抑えられますよ！ぜひご検討ください😊
+2025-07-13 15:30:35 - rmma - INFO - 
+[ReplyPostAgent]: reply_on_x( {"tweet_id": "1944282896904204557", "content": "\u7269\u4fa1\u9ad8\u306e\u4eca\u3001\u30b9\u30de\u30db\u4ee3\u306e\u7bc0\u7d04\u306f\u672c\u5f53\u306b\u91cd\u8981\u3067\u3059\u3088\u306d\uff01\u697d\u5929\u30e2\u30d0\u30a4\u30eb\u306a\u3089\u30c7\u30fc\u30bf\u5229\u7528\u91cf\u306b\u5408\u308f\u305b\u305f\u6bb5\u968e\u5236\u6599\u91d1\u3067\u3001\u4f7f\u3063\u305f\u5206\u3060\u3051\u3060\u304b\u3089\u7121\u99c4\u304c\u3042\u308a\u307e\u305b\u3093\u2728\u3055\u3089\u306b\u3001\u697d\u5929\u30dd\u30a4\u30f3\u30c8\u3082\u8caf\u307e\u3063\u3066\u6708\u3005\u306e\u652f\u6255\u3044\u306b\u4f7f\u3048\u308b\u306e\u3067\u3001\u8ce2\u304f\u901a\u4fe1\u8cbb\u3092\u6291\u3048\u3089\u308c\u307e\u3059\u3088\uff01\u305c\u3072\u3054\u691c\u8a0e\u304f\u3060\u3055\u3044\ud83d\ude0a"})
+2025-07-13 15:30:35 - rmma - INFO - Replying to tweet 1944282896904204557 with content: 物価高の今、スマホ代の節約は本当に重要ですよね！楽天モバイルならデータ利用量に合わせた段階制料金で、使った分だけだから無駄がありません✨さらに、楽天ポイントも貯まって月々の支払いに使えるので、賢く通信費を抑えられますよ！ぜひご検討ください😊
+2025-07-13 15:30:35 - rmma - INFO - token is ensured!
+2025-07-13 15:30:35 - rmma - INFO - [X] replied tweet: 201 {"data":{"text":"@august_tom87667 物価高の今、スマホ代の節約は本当に重要ですよね！楽天モバイルならデータ利用量に合わせた段階制料金で、使った分だけだから無駄がありません✨さらに、楽天ポイントも貯まって月々の支払いに使えるので、賢く通信費を抑えられますよ！ぜひご検討ください\uD83D\uDE0A","id":"1944283296437088275","edit_history_tweet_ids":["1944283296437088275"]}}
+2025-07-13 15:30:36 - rmma - INFO - 
+[ReplyPostAgent]: 返信を送信しました。
