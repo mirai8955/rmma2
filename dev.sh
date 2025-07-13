@@ -1,1 +1,2 @@
-https://meet.google.com/mtn-zybp-jdx
+pip install -r requirements.txt
+uvicorn main_api:app
