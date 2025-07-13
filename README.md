@@ -9,3 +9,8 @@ Then, configure the environment variables. Create a file named .env in the curre
 ```bash
 cp .env.example .env.local
 ```
+
+Run server
+```bash
+uvicorn main_api:app
+```
