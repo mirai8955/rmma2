@@ -22,7 +22,7 @@ class AgentManager:
         if agent.name ==  target_name:
             return agent
         for sub_agent in agent.sub_agents:
-            self.logger.info(f"Searching...{sub_agent}")
+            self.logger.info(f"Searching...{sub_agent.name}")
             result = self.find_agent(sub_agent, target_name)
             if result:
                 break
@@ -63,25 +63,9 @@ class AgentManager:
         self.runner = runner
         self.logger.info("Runner set.")
 
-    async def monitor_llm(self):
-        pass
+    async def monitor_llm(self, events_async):
 
-
-    async def generate_content(self, prompt: str):
-        """Generate tweet content with posting_agent"""
-
-        session, session_service, artifacts_service = await self.create_session_and_services()
-
-        await self.set_runner(prompt, self.agent_name, session_service, artifacts_service)
-
-        content = types.Content(role="user", parts=[types.Part(text=prompt)])
-
-        if self.runner:
-            events_async = self.runner.run_async(
-                session_id=session.id, user_id="test", new_message=content
-            )
-
-            async for event in events_async:
+        async for event in events_async:
                 if not event.content:
                     continue
                 author = event.author
@@ -100,6 +84,28 @@ class AgentManager:
                         message = f"\n[{author}]: {function_call.name}( {json.dumps(function_call.args)})"
                         self.logger.info(message)
                         yield message
+
+
+
+    async def run_stream_agent(self, prompt: str):
+        """Generate tweet content with posting_agent"""
+
+        yield f"[agent] Starting {self.agent_name} execution\n"
+
+        session, session_service, artifacts_service = await self.create_session_and_services()
+
+        await self.set_runner(prompt, self.agent_name, session_service, artifacts_service)
+
+        content = types.Content(role="user", parts=[types.Part(text=prompt)])
+
+        if self.runner:
+            events_async = self.runner.run_async(
+                session_id=session.id, user_id="test", new_message=content
+            )
+            async for message in self.monitor_llm(events_async):
+                yield message
+
+            
         else:
             self.logger.error("Runner is not set")
             yield "Error: Runner is not set"
