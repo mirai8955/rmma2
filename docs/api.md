@@ -1,0 +1,1 @@
+curl -X POST "http://localhost:8000/agent/stream" -H "Content-Type: application/json" -d '{"agent_name": "rmma", "prompt": "test"}' 

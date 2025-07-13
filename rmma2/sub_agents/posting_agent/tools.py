@@ -10,6 +10,9 @@ import base64
 import urllib.parse
 import webbrowser
 import http.server
+from log.rmma_logger import get_logger
+
+logger = get_logger()
 
 class x_client:
     def __init__(self):
@@ -25,9 +28,6 @@ class x_client:
 
         if not self.CLIENT_ID or not self.CLIENT_SECRET:
             raise ValueError("X_CLIENT_ID and X_CLIENT_SECRET is not set")
-
-        print(self.CLIENT_ID)
-        print(self.CLIENT_SECRET)
         
     def _gen_pkce_pair(self):
         verifier = "".join(secrets.choice(string.ascii_letters + string.digits) for _ in range(64) ) 
@@ -59,7 +59,7 @@ class x_client:
 
     def _get_authorization_code(self, verifier, challenge):
         url = self._build_authorize_url(challenge)
-        print("Opening browser for consent...")
+        logger.info("Opening browser for consent...")
         webbrowser.open(url)
         with http.server.HTTPServer(("127.0.0.1", self.PORT), CallbackHandler) as httpd:
             while CallbackHandler.code is None:
@@ -92,6 +92,7 @@ class x_client:
         if tok:
             tok = self.refresh_tokens(tok["refresh_token"])
             self._save_tokens(tok)
+            logger.info("token is ensured!")
             return tok["access_token"]
         
         #first time flow
@@ -105,16 +106,16 @@ class x_client:
         return tok["access_token"]
 
     def check_result(self, result, content: str):
-        print("[X] tweet result: ", result.status_code, result.text)
+        logger.info(f"[X] tweet result: {result.status_code} {result.text}")
 
         if result.status_code == 403:
-            print("[X] 403 Error Details:")
-            print(f"    - Content length: {len(content)} characters")
-            print(f"    - Content preview: {content[:100]}...")
-            print("    - This might be due to:")
-            print("      1. App permissions not set to 'Read and Write'")
-            print("      2. Token scope insufficient")
-            print("      3. Content policy violation")
+            logger.info("[X] 403 Error Details:")
+            logger.info(f"    - Content length: {len(content)} characters")
+            logger.info(f"    - Content preview: {content[:100]}...")
+            logger.info("    - This might be due to:")
+            logger.info("      1. App permissions not set to 'Read and Write'")
+            logger.info("      2. Token scope insufficient")
+            logger.info("      3. Content policy violation")
 
 
     def tweet(self, content: str):
@@ -130,11 +131,11 @@ class x_client:
         access_token = self.ensure_tokens()
         headers = {"Authorization": f"Bearer {access_token}"}
         r = requests.get(f"https://api.twitter.com/2/tweets/{tweet_id}", headers=headers, timeout=30)
-        print(f"[X] get_tweet_by_id result: {r.status_code}")
+        logger.info(f"[X] get_tweet_by_id result: {r.status_code}")
         if r.ok:
-            print("[X] Fetched tweet data:", r.json())
+            logger.info(f"[X] Fetched tweet data: {r.json()}")
         else:
-            print("[X] Failed to fetch tweet:", r.text)
+            logger.info(f"[X] Failed to fetch tweet: {r.text}")
         return r
 
     def reply_to_tweet(self, content: str, tweet_id_to_reply_to: str):
@@ -147,7 +148,7 @@ class x_client:
             }
         }
         r = requests.post("https://api.twitter.com/2/tweets", json=payload, headers=headers, timeout=30)
-        print(f"[X] replied tweet: {r.status_code}", r.text)
+        logger.info(f"[X] replied tweet: {r.status_code} {r.text}")
         if r.ok:
             return r.json()
         return None
@@ -157,7 +158,7 @@ class x_client:
         headers = {"Authorization": f"Bearer {access_token}"}
         params  = {"query": query, "max_results": max_results, "tweet.fields": "author_id"}
         r = requests.get("https://api.twitter.com/2/tweets/search/recent", params=params, headers=headers, timeout=30)
-        print("[X] search result: ", r.status_code, r.json() if r.ok else r.text)
+        logger.info(f"[X] search result: {r.status_code} {r.json() if r.ok else r.text}")
         return r
 
 class CallbackHandler(http.server.BaseHTTPRequestHandler):
@@ -187,18 +188,18 @@ def post_on_x(content: str):
         post_id: 投稿されたポストのid
         content: 投稿内容    
     """
-    print("Posting the content...", content)
+    logger.info(f"Posting the content... {content}")
     
     # Twitter の文字数制限（280文字）を適用
     if len(content) > 280:
         content = content[:277] + "..."
-        print("Content truncated to 280 characters:", content)
+        logger.info(f"Content truncated to 280 characters: {content}")
     
     x = x_client()
     r = x.tweet(content)
     
     if not r:
-        print("Failed to post:", r)
+        logger.info(f"Failed to post: {r}")
         return None, content
 
     post_id = 1
@@ -215,7 +216,7 @@ def reply_on_x(content: str, tweet_id: str):
     Returns:
         dict | None: 投稿結果。成功すればツイート情報、失敗すればNone。
     """
-    print(f"Replying to tweet {tweet_id} with content: {content}")
+    logger.info(f"Replying to tweet {tweet_id} with content: {content}")
     client = x_client()
     response = client.reply_to_tweet(content, tweet_id)
     return response
@@ -231,12 +232,12 @@ def search_on_x(query: str):
         content: json形式の検索結果
           
     """
-    print("Searching with query...", query)
+    logger.info(f"Searching with query...{query}")
     x = x_client()
     r = x.search(query, max_results=10)
 
     if r.ok:
         return r.json()
     else:
-        print("Search failed:", r.status_code, r.text)
+        logger.info(f"Search failed: {r.status_code} {r.text}")
         return {"error": f"Search failed with status {r.status_code}"}

@@ -29,7 +29,8 @@ def find_agent(agent, targat_name):
 
 
 def get_agent():
-    print("Inserting Posting Agent")
+    print("Inserting Agent")
+
     root_agent = rmma
     creator = find_agent(root_agent, "posting_agent")
     if creator:
@@ -37,6 +38,80 @@ def get_agent():
     else:
         print("NOT FOUND")
     return root_agent
+
+def get_agent_by(agent):
+    print("Inserting Agent")
+    root_agent = agent
+    found_agent = find_agent(root_agent, "rakuten_mobile_marketing_agent")
+    if found_agent:
+        print("FOUND", found_agent.name)
+    else:
+        print("NOT FOUND")
+    return root_agent
+
+
+async def stream_run_agent(prompt: str):
+    try:
+        yield "rmmaの実行を開始します...\n"
+        print("rmmaの実行を開始")
+        session_service = InMemorySessionService()
+        artifacts_service = InMemoryArtifactService()
+        agent = get_agent_by(rmma)
+
+        session = await session_service.create_session(
+            state={}, app_name='rmma', user_id="user1"
+        )
+
+        yield f"Created session with ID: {session.id}"
+        print(f"Created session with ID: {session.id}")
+
+        yield f"[user]: {prompt}"
+    
+        content = types.Content(role="user", parts=[types.Part(text=prompt)])
+
+        runner = Runner(
+            app_name="rmma",
+            agent=agent,
+            artifact_service=artifacts_service,
+            session_service=session_service,
+        )
+
+        events_async = runner.run_async(
+            session_id=session.id, user_id="user1", new_message=content
+        )
+
+        async for event in events_async:
+            if not event.content:
+                continue
+            author = event.author
+
+            function_calls = [
+                e.function_call for e in event.content.parts if e.function_call
+            ]
+
+            function_responses = [
+                e.function_response for e in event.content.parts if e.function_response
+            ]
+
+            if event.content.parts[0].text:
+                text_response = event.content.parts[0].text
+                yield f"\n[{author}]: {text_response}"
+                print(f"\n[{author}]: {text_response}")
+
+            if function_calls:
+                for function_call in function_calls:
+                    yield f"\n[{author}]: {function_call.name}( {json.dumps(function_call.args)})"
+                    print(f"\n[{author}]: {function_call.name}( {json.dumps(function_call.args)})")
+
+        yield "プロセスが正常に終了しました．"
+
+    except Exception as e:
+        error_json = json.dumps({
+            "type": "error",
+            "message": "エージェント実行中にエラーが発生しました．",
+            "detail": str(e)
+        })
+        yield f"event: error\ndata: {error_json}\n\n"
 
 
 async def async_content_generation(prompt):
@@ -46,7 +121,7 @@ async def async_content_generation(prompt):
     agent = get_agent()
     
     session = await session_service.create_session(
-        state={}, app_name="rmma-creator", user_id="rmma01"
+        state={}, app_name="rmma", user_id="rmma01"
     )
     
     print(f"Created session with ID: {session.id}")
@@ -56,7 +131,7 @@ async def async_content_generation(prompt):
     content = types.Content(role="user", parts=[types.Part(text=query)])
 
     runner = Runner(
-        app_name="rmma-creator",
+        app_name="rmma",
         agent=agent,
         artifact_service=artifacts_service,
         session_service=session_service,
