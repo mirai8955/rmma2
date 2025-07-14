@@ -1,11 +1,14 @@
 import asyncio
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.responses import StreamingResponse
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from log.rmma_logger import get_logger
 from rmma2.agent_manager import AgentManager, get_agent_all
 import json
 from prompt.prompt_manager import PromptManager
+from schemas.agent import AgentInfo
+from services.rmma_service import RmmaService
 
 # from main import async_content_generation, stream_run_agent
 
@@ -13,6 +16,14 @@ app = FastAPI(
     title="RMMA = Rakuten Mobile Marketing Agent API",
     description="楽天モバイルのマーケティング投稿を生成・実行するAPIです．",
     version="1.0.0",
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], # 全てのオリジンを許可（開発用）
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 class AgentRequest(BaseModel):
@@ -69,6 +80,53 @@ def get_agent_list(request: Request):
         "status": "success",
         "result": json.dumps(agents, ensure_ascii=False)
     }
+@app.get("/agent/{agent_name}", summary="指定されたエージェントの詳細情報を返す")
+def get_agent_detail(agent_name: str, request: Request):
+    logger = get_logger()
+    log(
+        logger,
+        request.method,
+        str(request.url),
+        request.headers.get("User-Agent", "Unknown")
+    )
+
+    try:
+        rmma_service = RmmaService()
+        agent_info = rmma_service.get_agent_detail(agent_name)
+        
+        return {
+            "status": "success",
+            "agent_name": agent_name,
+            "result": json.dumps(agent_info, ensure_ascii=False)
+        }
+
+    except Exception as e:
+        logger.erro(f"Error occured: {e}")
+        raise HTTPException(status_code=500, detail=f"内部エラー: {str(e)}")
+
+@app.post('/agent/{agent_name}', summary="agentの編集")
+def edit_agent_detail(agent_name: str, agent_info: AgentInfo, request: Request):
+    logger = get_logger()
+    log(
+        logger,
+        request.method,
+        str(request.url),
+        request.headers.get("User-Agent", "Unknown")
+    )
+
+    try:
+        rmma_service = RmmaService()
+        agent_info = rmma_service.edit_agent_detail(agent_info)
+        
+        return {
+            "status": "success",
+            "agent_name": agent_name,
+            "result": agent_info
+        }
+
+    except Exception as e:
+        logger.error(f"Error occurred: {e}")
+        raise HTTPException(status_code=500, detail=f"内部エラー: {str(e)}")
 
 @app.get("/prompt/lists", summary="全てのプロンプトを返す")
 def get_prompt_list(request: Request):
