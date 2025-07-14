@@ -29,18 +29,18 @@ class AgentManager:
         
     def find_agent(self, agent, target_name):
         result = None
-        self.logger.info(f"Matching...{agent.name}")
+        # self.logger.info(f"Matching...{agent.name}")
         if agent.name ==  target_name:
             return agent
         for sub_agent in agent.sub_agents:
-            self.logger.info(f"Searching...{sub_agent.name}")
+            # self.logger.info(f"Searching...{sub_agent.name}")
             result = self.find_agent(sub_agent, target_name)
             if result:
                 break
         return result
 
     def get_agent(self, agent_name):
-        self.logger.info("Inserting Agent")
+        # self.logger.info("Inserting Agent")
         agent = self.find_agent(self.root_agent, agent_name)
         if agent:
             self.logger.info("Agent found")

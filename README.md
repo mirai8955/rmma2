@@ -22,5 +22,5 @@ python -m x.activate
 
 Run server
 ```zsh
-uvicorn main_api:app
+uvicorn main_api:app --reload
 ```
