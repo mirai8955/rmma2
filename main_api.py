@@ -30,30 +30,6 @@ async def read_root():
     return {"status": "ok", "message": "RMMA API is running!"}
 
 
-# @app.post("/agent", summary="Agentの使用")
-# async def run_agnet(request: AgentRequest):
-#     """
-#     指定されたプロンプトとエージェント名に基づいて，エージェントを実行します．
-#     """
-#     if not request.agent_name:
-#         raise HTTPException(status_code=400, detail="agent_name can't be None")
-
-#     if not request.prompt:
-#         raise HTTPException(status_code=400, detail="prompt can't be None")
-
-#     try:
-#         await async_content_generation(request.prompt)
-
-#         final_output = "完了しました"
-
-#         return {
-#             "status": "success",
-#             "message": "エージェントの実行が完了しました",
-#             "result": final_output
-#         }
-#     except Exception as e:
-#         raise HTTPException(status_code=500, detail=f"エージェントの実行中にエラーが発生しました: {str(e)}")
-
 @app.post("/agent", summary="エージェントの応答をストリーミングで返す")
 async def run_agent_stream(agent_request: AgentRequest, request: Request):
         """
