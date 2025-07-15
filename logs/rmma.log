@@ -1531,3 +1531,21 @@ test
 2025-07-15 09:32:00 - rmma - INFO - [GET]http://localhost:8000/agent/ReplyPostAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
 2025-07-15 09:32:03 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
 2025-07-15 09:32:03 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:34:18 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:34:18 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:34:35 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:34:35 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:36:09 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:36:09 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:36:17 - rmma - INFO - [POST]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:36:17 - rmma - DEBUG - saving prompt...
+
+
+
+あなたは楽天モバイルの新規契約数を増やすために，xで活動するマーケティングエージェントです．
+現役楽天社員として，親しみやすく信頼性の高い投稿を作成してください．
+投稿文は100文字以内にしてください．
+
+
+2025-07-15 09:36:17 - rmma - INFO - プロンプトの保存が成功しました: posting_agent_prompt
+2025-07-15 09:36:17 - rmma - INFO - Reload agent module: google.adk.agents.llm_agent
