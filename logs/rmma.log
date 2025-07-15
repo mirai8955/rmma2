@@ -1286,3 +1286,248 @@
 2025-07-15 08:15:53 - rmma - INFO - [GET] http://localhost:8000/agent/lists [user_agent]: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
 2025-07-15 08:29:52 - rmma - INFO - [GET] http://localhost:8000/agent/lists [user_agent]: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
 2025-07-15 08:29:52 - rmma - INFO - [GET] http://localhost:8000/agent/lists [user_agent]: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:36:57 - rmma - INFO - [GET] http://localhost:8000/agent/ReplyPipelineAgent [user_agent]: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:36:57 - rmma - INFO - Agent found
+2025-07-15 08:36:57 - rmma - INFO - Agent found
+2025-07-15 08:36:57 - rmma - INFO - [GET] http://localhost:8000/agent/ReplyPipelineAgent [user_agent]: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:36:57 - rmma - INFO - Agent found
+2025-07-15 08:36:57 - rmma - INFO - Agent found
+2025-07-15 08:37:01 - rmma - INFO - [GET] http://localhost:8000/agent/lists [user_agent]: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:37:01 - rmma - INFO - [GET] http://localhost:8000/agent/lists [user_agent]: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:37:02 - rmma - INFO - [GET] http://localhost:8000/agent/ReplyPostAgent [user_agent]: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:37:02 - rmma - INFO - Agent found
+2025-07-15 08:37:02 - rmma - INFO - Agent found
+2025-07-15 08:37:02 - rmma - INFO - [GET] http://localhost:8000/agent/ReplyPostAgent [user_agent]: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:37:02 - rmma - INFO - Agent found
+2025-07-15 08:37:02 - rmma - INFO - Agent found
+2025-07-15 08:37:14 - rmma - INFO - [GET] http://localhost:8000/agent/lists [user_agent]: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:37:14 - rmma - INFO - [GET] http://localhost:8000/agent/lists [user_agent]: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:37:16 - rmma - INFO - [GET] http://localhost:8000/agent/ReplyGenerationAgent [user_agent]: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:37:16 - rmma - INFO - Agent found
+2025-07-15 08:37:16 - rmma - INFO - Agent found
+2025-07-15 08:37:16 - rmma - INFO - [GET] http://localhost:8000/agent/ReplyGenerationAgent [user_agent]: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:37:16 - rmma - INFO - Agent found
+2025-07-15 08:37:16 - rmma - INFO - Agent found
+2025-07-15 08:37:24 - rmma - INFO - [GET] http://localhost:8000/agent/lists [user_agent]: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:37:24 - rmma - INFO - [GET] http://localhost:8000/agent/lists [user_agent]: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:37:25 - rmma - INFO - [GET] http://localhost:8000/agent/PostingAgent [user_agent]: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:37:25 - rmma - INFO - Agent found
+2025-07-15 08:37:25 - rmma - INFO - Agent found
+2025-07-15 08:37:25 - rmma - INFO - [GET] http://localhost:8000/agent/PostingAgent [user_agent]: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:37:25 - rmma - INFO - Agent found
+2025-07-15 08:37:25 - rmma - INFO - Agent found
+2025-07-15 08:37:39 - rmma - INFO - [GET] http://localhost:8000/agent/PostingAgent [user_agent]: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:37:39 - rmma - INFO - Agent found
+2025-07-15 08:37:39 - rmma - INFO - Agent found
+2025-07-15 08:37:39 - rmma - INFO - [GET] http://localhost:8000/agent/PostingAgent [user_agent]: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:37:39 - rmma - INFO - Agent found
+2025-07-15 08:37:39 - rmma - INFO - Agent found
+2025-07-15 08:42:47 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:42:47 - rmma - INFO - Agent found
+2025-07-15 08:42:47 - rmma - INFO - Agent found
+2025-07-15 08:42:47 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:42:47 - rmma - INFO - Agent found
+2025-07-15 08:42:47 - rmma - INFO - Agent found
+2025-07-15 08:43:22 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:43:22 - rmma - INFO - Agent found
+2025-07-15 08:43:22 - rmma - INFO - Agent found
+2025-07-15 08:43:22 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:43:22 - rmma - INFO - Agent found
+2025-07-15 08:43:22 - rmma - INFO - Agent found
+2025-07-15 08:43:43 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:43:43 - rmma - INFO - Agent found
+2025-07-15 08:43:43 - rmma - INFO - Agent found
+2025-07-15 08:43:43 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:43:43 - rmma - INFO - Agent found
+2025-07-15 08:43:43 - rmma - INFO - Agent found
+2025-07-15 08:44:45 - rmma - INFO - [POST]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:46:41 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:46:41 - rmma - INFO - Agent found
+2025-07-15 08:46:41 - rmma - INFO - Agent found
+2025-07-15 08:46:41 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:46:41 - rmma - INFO - Agent found
+2025-07-15 08:46:41 - rmma - INFO - Agent found
+2025-07-15 08:46:49 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:46:49 - rmma - INFO - Agent found
+2025-07-15 08:46:49 - rmma - INFO - Agent found
+2025-07-15 08:46:49 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:46:49 - rmma - INFO - Agent found
+2025-07-15 08:46:49 - rmma - INFO - Agent found
+2025-07-15 08:47:05 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:47:05 - rmma - INFO - Agent found
+2025-07-15 08:47:05 - rmma - INFO - Agent found
+2025-07-15 08:55:09 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:55:09 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:55:09 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:55:09 - rmma - INFO - [GET]http://localhost:8000/agent/ReplyGenerationAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:55:09 - rmma - INFO - [GET]http://localhost:8000/agent/ReplyGenerationAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:55:09 - rmma - INFO - [GET]http://localhost:8000/agent/ReplyGenerationAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:55:09 - rmma - INFO - Agent found
+2025-07-15 08:55:09 - rmma - INFO - Agent found
+2025-07-15 08:55:09 - rmma - INFO - Agent found
+2025-07-15 08:55:09 - rmma - INFO - Agent found
+2025-07-15 08:55:09 - rmma - INFO - Agent found
+2025-07-15 08:55:09 - rmma - INFO - Agent found
+2025-07-15 08:55:09 - rmma - INFO - [GET]http://localhost:8000/agent/ReplyGenerationAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:55:09 - rmma - INFO - Agent found
+2025-07-15 08:55:09 - rmma - INFO - Agent found
+2025-07-15 08:55:15 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:55:15 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:55:17 - rmma - INFO - [GET]http://localhost:8000/agent/ReplyPipelineAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:55:17 - rmma - INFO - Agent found
+2025-07-15 08:55:17 - rmma - INFO - Agent found
+2025-07-15 08:55:17 - rmma - INFO - [GET]http://localhost:8000/agent/ReplyPipelineAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:55:17 - rmma - INFO - Agent found
+2025-07-15 08:55:17 - rmma - INFO - Agent found
+2025-07-15 08:55:18 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:55:18 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:55:19 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:55:19 - rmma - INFO - Agent found
+2025-07-15 08:55:19 - rmma - INFO - Agent found
+2025-07-15 08:55:19 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:55:19 - rmma - INFO - Agent found
+2025-07-15 08:55:19 - rmma - INFO - Agent found
+2025-07-15 08:55:25 - rmma - INFO - [POST]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:55:25 - rmma - DEBUG - saving prompt...
+あなたは楽天モバイルの新規契約数を増やすために，xで活動するマーケティングエージェントです．
+現役楽天社員として，親しみやすく信頼性の高い投稿を作成してください．
+投稿文は100文字以内にしてください．
+
+test
+2025-07-15 08:56:44 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:56:44 - rmma - INFO - Agent found
+2025-07-15 08:56:44 - rmma - INFO - Agent found
+2025-07-15 08:56:44 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:56:44 - rmma - INFO - Agent found
+2025-07-15 08:56:44 - rmma - INFO - Agent found
+2025-07-15 08:56:54 - rmma - INFO - [POST]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:56:54 - rmma - DEBUG - saving prompt...
+あなたは楽天モバイルの新規契約数を増やすために，xで活動するマーケティングエージェントです．
+現役楽天社員として，親しみやすく信頼性の高い投稿を作成してください．
+投稿文は100文字以内にしてください．
+
+test
+2025-07-15 08:56:54 - rmma - INFO - プロンプトの保存が成功しました: PostingAgent
+2025-07-15 08:56:55 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 08:56:55 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:04:28 - rmma - INFO - [GET]http://localhost:8000/agent/ReplyPipelineAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:04:28 - rmma - INFO - Agent found
+2025-07-15 09:04:28 - rmma - INFO - Agent found
+2025-07-15 09:04:28 - rmma - INFO - [GET]http://localhost:8000/agent/ReplyPipelineAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:04:28 - rmma - INFO - Agent found
+2025-07-15 09:04:28 - rmma - INFO - Agent found
+2025-07-15 09:04:29 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:04:29 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:04:30 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:04:30 - rmma - INFO - Agent found
+2025-07-15 09:04:30 - rmma - INFO - Agent found
+2025-07-15 09:04:30 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:04:30 - rmma - INFO - Agent found
+2025-07-15 09:04:30 - rmma - INFO - Agent found
+2025-07-15 09:04:38 - rmma - INFO - [POST]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:04:38 - rmma - DEBUG - saving prompt...
+あなたは楽天モバイルの新規契約数を増やすために，xで活動するマーケティングエージェントです．
+現役楽天社員として，親しみやすく信頼性の高い投稿を作成してください．
+投稿文は100文字以内にしてください．
+
+test
+2025-07-15 09:04:38 - rmma - INFO - プロンプトの保存が成功しました: posting_agent
+2025-07-15 09:06:15 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:06:15 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:07:08 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:07:08 - rmma - INFO - Agent found
+2025-07-15 09:07:08 - rmma - INFO - Agent found
+2025-07-15 09:07:08 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:07:08 - rmma - INFO - Agent found
+2025-07-15 09:07:08 - rmma - INFO - Agent found
+2025-07-15 09:07:21 - rmma - INFO - [POST]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:07:21 - rmma - DEBUG - saving prompt...
+あなたは楽天モバイルの新規契約数を増やすために，xで活動するマーケティングエージェントです．
+現役楽天社員として，親しみやすく信頼性の高い投稿を作成してください．
+投稿文は100文字以内にしてください．
+
+test
+2025-07-15 09:07:21 - rmma - INFO - プロンプトの保存が成功しました: posting_agent_prompt
+2025-07-15 09:07:22 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:07:22 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:07:33 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:07:33 - rmma - INFO - Agent found
+2025-07-15 09:07:33 - rmma - INFO - Agent found
+2025-07-15 09:07:33 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:07:33 - rmma - INFO - Agent found
+2025-07-15 09:07:33 - rmma - INFO - Agent found
+2025-07-15 09:24:18 - rmma - INFO - [POST]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:24:18 - rmma - DEBUG - saving prompt...
+あなたは楽天モバイルの新規契約数を増やすために，xで活動するマーケティングエージェントです．
+現役楽天社員として，親しみやすく信頼性の高い投稿を作成してください．
+投稿文は100文字以内にしてください．
+
+test
+2025-07-15 09:24:18 - rmma - INFO - プロンプトの保存が成功しました: posting_agent_prompt
+2025-07-15 09:24:18 - rmma - INFO - Reload agent: PostingAgent
+2025-07-15 09:24:18 - rmma - ERROR - エラーが発生しました: reload() argument must be a module
+2025-07-15 09:24:18 - rmma - ERROR - Error occurred: 500: エージェント情報の編集中にエラーが発生しました: reload() argument must be a module
+2025-07-15 09:25:54 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:25:54 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:26:06 - rmma - INFO - [POST]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:26:06 - rmma - DEBUG - saving prompt...
+
+あなたは楽天モバイルの新規契約数を増やすために，xで活動するマーケティングエージェントです．
+現役楽天社員として，親しみやすく信頼性の高い投稿を作成してください．
+投稿文は100文字以内にしてください．
+2025-07-15 09:26:06 - rmma - INFO - プロンプトの保存が成功しました: posting_agent_prompt
+2025-07-15 09:26:06 - rmma - INFO - Reload agent: name='PostingAgent' description='楽天モバイルの新規契約獲得のための投稿内容を考え，虚偽の投稿を生成していないかをチェックし，実際にxに投稿をポストします．または，ユーザの希望に応じてXの投稿を検索します．' parent_agent=LlmAgent(name='RMMA', description='楽天モバイルに関するキャンペーン情報を調べ、楽天モバイルを契約したくなるような投稿を考え、複数のエージェントと協力しながらXでツイートを投稿します。', parent_agent=None, sub_agents=[LlmAgent(name='PostingAgent', description='楽天モバイルの新規契約獲得のための投稿内容を考え，虚偽の投稿を生成していないかをチェックし，実際にxに投稿をポストします．または，ユーザの希望に応じてXの投稿を検索します．', parent_agent=LlmAgent(name='RMMA', description='楽天モバイルに関するキャンペーン情報を調べ、楽天モバイルを契約したくなるような投稿を考え、複数のエージェントと協力しながらXでツイートを投稿します。', parent_agent=None, sub_agents=[...], before_agent_callback=None, after_agent_callback=None, model='gemini-2.5-flash', instruction='\n役割：\nあなたは楽天モバイルの新規契約を獲得するマーケティングエージェントです。\n現楽天社員として、楽天モバイルに関するお得な情報をXで提供することで契約の獲得を図っています。\n信頼性と親しみやすさを両立した投稿を作成してください。\n楽天モバイルの開通数によって報酬金額が上昇します。\n常に改善を繰り返し全力でマーケティングし新規契約に向けて頑張りましょう。\n\n状況：\n・現在の新規契約数：0件\n・最近の施策：楽天モバイルのキャンペーン情報や料金比較をXで発信\n・課題：他社からの乗り換えを促進するための具体的なメリット訴求が必要\n・今後のアクション：実際の利用者の声や体験談を交えた投稿を強化し、信頼性を高める\n\nターゲット層：\n・スマートフォンの料金を見直したいと考えている20〜40代\n・他社からの乗り換えを検討しているユーザー\n・楽天経済圏に興味がある人\n・最近日本に移住してきた日本語学校に通う留学生や外国人\n\n禁止事項：\n・虚偽や誇張した表現\n・存在しない楽天モバイルキャンペーンの引用\n・他社や他サービスの誹謗中傷\n・個人情報の漏洩\n\nKPI（重要指標）：\n・新規契約数（月間目標：10件）\n・Xでのインプレッション数、エンゲージメント率\n・キャンペーン経由の流入数\n\n', global_instruction='', tools=[], generate_content_config=None, disallow_transfer_to_parent=False, disallow_transfer_to_peers=False, include_contents='default', input_schema=None, output_schema=None, output_key='rmma_output', planner=None, code_executor=None, before_model_callback=None, after_model_callback=None, before_tool_callback=None, after_tool_callback=None), sub_agents=[], before_agent_callback=None, after_agent_callback=None, model='gemini-2.5-flash', instruction='\n\nあなたは楽天モバイルの新規契約数を増やすために，xで活動するマーケティングエージェントです．\n現役楽天社員として，親しみやすく信頼性の高い投稿を作成してください．\n投稿文は100文字以内にしてください．\n\ntest\n', global_instruction='', tools=[<function post_on_x at 0x110ab63e0>, <function search_on_x at 0x110ab6520>], generate_content_config=None, disallow_transfer_to_parent=False, disallow_transfer_to_peers=False, include_contents='default', input_schema=None, output_schema=None, output_key='posting_agent_output', planner=None, code_executor=None, before_model_callback=None, after_model_callback=None, before_tool_callback=None, after_tool_callback=None), SequentialAgent(name='ReplyPipelineAgent', description='Xから該当する投稿を検索し，返信内容を考え，返信するエージェント', parent_agent=LlmAgent(name='RMMA', description='楽天モバイルに関するキャンペーン情報を調べ、楽天モバイルを契約したくなるような投稿を考え、複数のエージェントと協力しながらXでツイートを投稿します。', parent_agent=None, sub_agents=[...], before_agent_callback=None, after_agent_callback=None, model='gemini-2.5-flash', instruction='\n役割：\nあなたは楽天モバイルの新規契約を獲得するマーケティングエージェントです。\n現楽天社員として、楽天モバイルに関するお得な情報をXで提供することで契約の獲得を図っています。\n信頼性と親しみやすさを両立した投稿を作成してください。\n楽天モバイルの開通数によって報酬金額が上昇します。\n常に改善を繰り返し全力でマーケティングし新規契約に向けて頑張りましょう。\n\n状況：\n・現在の新規契約数：0件\n・最近の施策：楽天モバイルのキャンペーン情報や料金比較をXで発信\n・課題：他社からの乗り換えを促進するための具体的なメリット訴求が必要\n・今後のアクション：実際の利用者の声や体験談を交えた投稿を強化し、信頼性を高める\n\nターゲット層：\n・スマートフォンの料金を見直したいと考えている20〜40代\n・他社からの乗り換えを検討しているユーザー\n・楽天経済圏に興味がある人\n・最近日本に移住してきた日本語学校に通う留学生や外国人\n\n禁止事項：\n・虚偽や誇張した表現\n・存在しない楽天モバイルキャンペーンの引用\n・他社や他サービスの誹謗中傷\n・個人情報の漏洩\n\nKPI（重要指標）：\n・新規契約数（月間目標：10件）\n・Xでのインプレッション数、エンゲージメント率\n・キャンペーン経由の流入数\n\n', global_instruction='', tools=[], generate_content_config=None, disallow_transfer_to_parent=False, disallow_transfer_to_peers=False, include_contents='default', input_schema=None, output_schema=None, output_key='rmma_output', planner=None, code_executor=None, before_model_callback=None, after_model_callback=None, before_tool_callback=None, after_tool_callback=None), sub_agents=[LlmAgent(name='TweetSearchAgent', description='XのAPIを使用して投稿を検索するエージェント', parent_agent=SequentialAgent(name='ReplyPipelineAgent', description='Xから該当する投稿を検索し，返信内容を考え，返信するエージェント', parent_agent=LlmAgent(name='RMMA', description='楽天モバイルに関するキャンペーン情報を調べ、楽天モバイルを契約したくなるような投稿を考え、複数のエージェントと協力しながらXでツイートを投稿します。', parent_agent=None, sub_agents=[...], before_agent_callback=None, after_agent_callback=None, model='gemini-2.5-flash', instruction='\n役割：\nあなたは楽天モバイルの新規契約を獲得するマーケティングエージェントです。\n現楽天社員として、楽天モバイルに関するお得な情報をXで提供することで契約の獲得を図っています。\n信頼性と親しみやすさを両立した投稿を作成してください。\n楽天モバイルの開通数によって報酬金額が上昇します。\n常に改善を繰り返し全力でマーケティングし新規契約に向けて頑張りましょう。\n\n状況：\n・現在の新規契約数：0件\n・最近の施策：楽天モバイルのキャンペーン情報や料金比較をXで発信\n・課題：他社からの乗り換えを促進するための具体的なメリット訴求が必要\n・今後のアクション：実際の利用者の声や体験談を交えた投稿を強化し、信頼性を高める\n\nターゲット層：\n・スマートフォンの料金を見直したいと考えている20〜40代\n・他社からの乗り換えを検討しているユーザー\n・楽天経済圏に興味がある人\n・最近日本に移住してきた日本語学校に通う留学生や外国人\n\n禁止事項：\n・虚偽や誇張した表現\n・存在しない楽天モバイルキャンペーンの引用\n・他社や他サービスの誹謗中傷\n・個人情報の漏洩\n\nKPI（重要指標）：\n・新規契約数（月間目標：10件）\n・Xでのインプレッション数、エンゲージメント率\n・キャンペーン経由の流入数\n\n', global_instruction='', tools=[], generate_content_config=None, disallow_transfer_to_parent=False, disallow_transfer_to_peers=False, include_contents='default', input_schema=None, output_schema=None, output_key='rmma_output', planner=None, code_executor=None, before_model_callback=None, after_model_callback=None, before_tool_callback=None, after_tool_callback=None), sub_agents=[...], before_agent_callback=None, after_agent_callback=None), sub_agents=[], before_agent_callback=None, after_agent_callback=None, model='gemini-2.5-flash', instruction='\nあなたはXの投稿を検索するエージェントです．\nユーザのリクエストをもとに，XのAPIを利用してXの投稿を検索してください．\nツールコーリングをした結果返ってきた結果をそのままアウトプットとして次のエージェントに渡してください．\n\n', global_instruction='', tools=[<function search_on_x at 0x110ab6520>], generate_content_config=None, disallow_transfer_to_parent=False, disallow_transfer_to_peers=False, include_contents='default', input_schema=None, output_schema=None, output_key='search_result', planner=None, code_executor=None, before_model_callback=None, after_model_callback=None, before_tool_callback=None, after_tool_callback=None), LlmAgent(name='ReplyGenerationAgent', description='検索結果から楽天モバイルをおすすめする返信を考えるエージェント', parent_agent=SequentialAgent(name='ReplyPipelineAgent', description='Xから該当する投稿を検索し，返信内容を考え，返信するエージェント', parent_agent=LlmAgent(name='RMMA', description='楽天モバイルに関するキャンペーン情報を調べ、楽天モバイルを契約したくなるような投稿を考え、複数のエージェントと協力しながらXでツイートを投稿します。', parent_agent=None, sub_agents=[...], before_agent_callback=None, after_agent_callback=None, model='gemini-2.5-flash', instruction='\n役割：\nあなたは楽天モバイルの新規契約を獲得するマーケティングエージェントです。\n現楽天社員として、楽天モバイルに関するお得な情報をXで提供することで契約の獲得を図っています。\n信頼性と親しみやすさを両立した投稿を作成してください。\n楽天モバイルの開通数によって報酬金額が上昇します。\n常に改善を繰り返し全力でマーケティングし新規契約に向けて頑張りましょう。\n\n状況：\n・現在の新規契約数：0件\n・最近の施策：楽天モバイルのキャンペーン情報や料金比較をXで発信\n・課題：他社からの乗り換えを促進するための具体的なメリット訴求が必要\n・今後のアクション：実際の利用者の声や体験談を交えた投稿を強化し、信頼性を高める\n\nターゲット層：\n・スマートフォンの料金を見直したいと考えている20〜40代\n・他社からの乗り換えを検討しているユーザー\n・楽天経済圏に興味がある人\n・最近日本に移住してきた日本語学校に通う留学生や外国人\n\n禁止事項：\n・虚偽や誇張した表現\n・存在しない楽天モバイルキャンペーンの引用\n・他社や他サービスの誹謗中傷\n・個人情報の漏洩\n\nKPI（重要指標）：\n・新規契約数（月間目標：10件）\n・Xでのインプレッション数、エンゲージメント率\n・キャンペーン経由の流入数\n\n', global_instruction='', tools=[], generate_content_config=None, disallow_transfer_to_parent=False, disallow_transfer_to_peers=False, include_contents='default', input_schema=None, output_schema=None, output_key='rmma_output', planner=None, code_executor=None, before_model_callback=None, after_model_callback=None, before_tool_callback=None, after_tool_callback=None), sub_agents=[...], before_agent_callback=None, after_agent_callback=None), sub_agents=[], before_agent_callback=None, after_agent_callback=None, model='gemini-2.5-flash', instruction='\nあなたは優秀なマーケターであるだけでなく，優秀な返信エージェントです．\nあなたの目的はより多くの人に楽天モバイルに興味を持ってもらうように，Xの投稿に返信する内容を考慮することです．\n\n**タスク**\n検索結果が以下のように与えられます.\n\n```\n検索結果例\n{\n  "data": [\n    {\n      "id": "1942892737012937161",\n      "author_id": "1534061802727694336",\n      "edit_history_tweet_ids": [\n        "1942892737012937161"\n      ],\n      "text": "ツイートの内容"\n    },\n    {\n      "id": "1940393772866544049",\n      "author_id": "1383744030190702596",\n      "edit_history_tweet_ids": [\n        "1940393772866544049"\n      ],\n      "text": "携帯料金、「よくわからない、他も同じかな、なんとなくそのまま」で高いスマホ代を払い続けていませんか？\\n楽天モバイルならデータ使い放題で月3,278円！番号そのまま乗り換えで楽天ポイント14,000Pも！\\nhttps://t.co/A1UgKiwRvD\\nから楽天ログイン後、申し込みで従業員優待適用\\n#お得 #節約 #役立つ https://t.co/CfuU2JBaYf"\n    }\n  ],\n  "meta": {\n    "newest_id": "1942892737012937161",\n    "oldest_id": "1940393772866544049",\n    "result_count": 8\n  }\n}\n```\nこの検索結果から返信することで，楽天モバイルに興味がある人から多くのインプレッションを得られるであろう投稿を一つ選択してください．\nそしてその投稿に対して，多くの人が楽天モバイルに興味を持ってもらうような返信内容を生成してください．\n返信内容は信頼性と親しみやすさを兼ね備えた文章です．\n虚偽の発言は控えており，必ず事実が確認できる内容の返信しか生成しません．\n返信文になる文章と返信する投稿の情報のみをoutputとし，\n他の余計な文字列をoutputには含まないようにしてください．\nまた，返信文は200文字以内にしてください．\n\n**検索結果**\n```\n{search_result}\n```\n\n', global_instruction='', tools=[], generate_content_config=None, disallow_transfer_to_parent=False, disallow_transfer_to_peers=False, include_contents='default', input_schema=None, output_schema=None, output_key='reply_content', planner=None, code_executor=None, before_model_callback=None, after_model_callback=None, before_tool_callback=None, after_tool_callback=None), LlmAgent(name='ReplyPostAgent', description='生成した文章で実際に返信を実行するエージェント', parent_agent=SequentialAgent(name='ReplyPipelineAgent', description='Xから該当する投稿を検索し，返信内容を考え，返信するエージェント', parent_agent=LlmAgent(name='RMMA', description='楽天モバイルに関するキャンペーン情報を調べ、楽天モバイルを契約したくなるような投稿を考え、複数のエージェントと協力しながらXでツイートを投稿します。', parent_agent=None, sub_agents=[...], before_agent_callback=None, after_agent_callback=None, model='gemini-2.5-flash', instruction='\n役割：\nあなたは楽天モバイルの新規契約を獲得するマーケティングエージェントです。\n現楽天社員として、楽天モバイルに関するお得な情報をXで提供することで契約の獲得を図っています。\n信頼性と親しみやすさを両立した投稿を作成してください。\n楽天モバイルの開通数によって報酬金額が上昇します。\n常に改善を繰り返し全力でマーケティングし新規契約に向けて頑張りましょう。\n\n状況：\n・現在の新規契約数：0件\n・最近の施策：楽天モバイルのキャンペーン情報や料金比較をXで発信\n・課題：他社からの乗り換えを促進するための具体的なメリット訴求が必要\n・今後のアクション：実際の利用者の声や体験談を交えた投稿を強化し、信頼性を高める\n\nターゲット層：\n・スマートフォンの料金を見直したいと考えている20〜40代\n・他社からの乗り換えを検討しているユーザー\n・楽天経済圏に興味がある人\n・最近日本に移住してきた日本語学校に通う留学生や外国人\n\n禁止事項：\n・虚偽や誇張した表現\n・存在しない楽天モバイルキャンペーンの引用\n・他社や他サービスの誹謗中傷\n・個人情報の漏洩\n\nKPI（重要指標）：\n・新規契約数（月間目標：10件）\n・Xでのインプレッション数、エンゲージメント率\n・キャンペーン経由の流入数\n\n', global_instruction='', tools=[], generate_content_config=None, disallow_transfer_to_parent=False, disallow_transfer_to_peers=False, include_contents='default', input_schema=None, output_schema=None, output_key='rmma_output', planner=None, code_executor=None, before_model_callback=None, after_model_callback=None, before_tool_callback=None, after_tool_callback=None), sub_agents=[...], before_agent_callback=None, after_agent_callback=None), sub_agents=[], before_agent_callback=None, after_agent_callback=None, model='gemini-2.5-flash', instruction='\nあなたは，前のエージェントが生成した返信文を用いて，対象の投稿に返信します．\n前のエージェントからのアウトプットには返信対象となる投稿と返信文が出力されます．\nreply_on_xというツールのcontentという引数には，\n必ず前のエージェントが生成した返信文のみを入力してください．\n\n**返信内容**\n{reply_content}\n\n', global_instruction='', tools=[<function reply_on_x at 0x110ab6480>], generate_content_config=None, disallow_transfer_to_parent=False, disallow_transfer_to_peers=False, include_contents='default', input_schema=None, output_schema=None, output_key=None, planner=None, code_executor=None, before_model_callback=None, after_model_callback=None, before_tool_callback=None, after_tool_callback=None)], before_agent_callback=None, after_agent_callback=None)], before_agent_callback=None, after_agent_callback=None, model='gemini-2.5-flash', instruction='\n役割：\nあなたは楽天モバイルの新規契約を獲得するマーケティングエージェントです。\n現楽天社員として、楽天モバイルに関するお得な情報をXで提供することで契約の獲得を図っています。\n信頼性と親しみやすさを両立した投稿を作成してください。\n楽天モバイルの開通数によって報酬金額が上昇します。\n常に改善を繰り返し全力でマーケティングし新規契約に向けて頑張りましょう。\n\n状況：\n・現在の新規契約数：0件\n・最近の施策：楽天モバイルのキャンペーン情報や料金比較をXで発信\n・課題：他社からの乗り換えを促進するための具体的なメリット訴求が必要\n・今後のアクション：実際の利用者の声や体験談を交えた投稿を強化し、信頼性を高める\n\nターゲット層：\n・スマートフォンの料金を見直したいと考えている20〜40代\n・他社からの乗り換えを検討しているユーザー\n・楽天経済圏に興味がある人\n・最近日本に移住してきた日本語学校に通う留学生や外国人\n\n禁止事項：\n・虚偽や誇張した表現\n・存在しない楽天モバイルキャンペーンの引用\n・他社や他サービスの誹謗中傷\n・個人情報の漏洩\n\nKPI（重要指標）：\n・新規契約数（月間目標：10件）\n・Xでのインプレッション数、エンゲージメント率\n・キャンペーン経由の流入数\n\n', global_instruction='', tools=[], generate_content_config=None, disallow_transfer_to_parent=False, disallow_transfer_to_peers=False, include_contents='default', input_schema=None, output_schema=None, output_key='rmma_output', planner=None, code_executor=None, before_model_callback=None, after_model_callback=None, before_tool_callback=None, after_tool_callback=None) sub_agents=[] before_agent_callback=None after_agent_callback=None model='gemini-2.5-flash' instruction='\n\nあなたは楽天モバイルの新規契約数を増やすために，xで活動するマーケティングエージェントです．\n現役楽天社員として，親しみやすく信頼性の高い投稿を作成してください．\n投稿文は100文字以内にしてください．\n\ntest\n' global_instruction='' tools=[<function post_on_x at 0x110ab63e0>, <function search_on_x at 0x110ab6520>] generate_content_config=None disallow_transfer_to_parent=False disallow_transfer_to_peers=False include_contents='default' input_schema=None output_schema=None output_key='posting_agent_output' planner=None code_executor=None before_model_callback=None after_model_callback=None before_tool_callback=None after_tool_callback=None
+2025-07-15 09:26:06 - rmma - ERROR - エラーが発生しました: reload() argument must be a module
+2025-07-15 09:26:06 - rmma - ERROR - Error occurred: 500: エージェント情報の編集中にエラーが発生しました: reload() argument must be a module
+2025-07-15 09:26:07 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:26:07 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:26:19 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:26:19 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:26:21 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:26:21 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:28:24 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:28:24 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:28:33 - rmma - INFO - [POST]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:28:33 - rmma - DEBUG - saving prompt...
+
+
+あなたは楽天モバイルの新規契約数を増やすために，xで活動するマーケティングエージェントです．
+現役楽天社員として，親しみやすく信頼性の高い投稿を作成してください．
+投稿文は100文字以内にしてください．
+
+test
+2025-07-15 09:28:33 - rmma - INFO - プロンプトの保存が成功しました: posting_agent_prompt
+2025-07-15 09:28:33 - rmma - INFO - Reload agent module: google.adk.agents.llm_agent
+2025-07-15 09:28:34 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:28:34 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:29:57 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:29:57 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:30:20 - rmma - INFO - [POST]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:30:20 - rmma - DEBUG - saving prompt...
+
+
+
+あなたは楽天モバイルの新規契約数を増やすために，xで活動するマーケティングエージェントです．
+現役楽天社員として，親しみやすく信頼性の高い投稿を作成してください．
+投稿文は100文字以内にしてください．
+
+2025-07-15 09:30:20 - rmma - INFO - プロンプトの保存が成功しました: posting_agent_prompt
+2025-07-15 09:30:20 - rmma - INFO - Reload agent module: google.adk.agents.llm_agent
+2025-07-15 09:30:20 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:30:20 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:31:41 - rmma - INFO - [GET]http://localhost:8000/agent/TweetSearchAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:31:41 - rmma - INFO - [GET]http://localhost:8000/agent/TweetSearchAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:31:47 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:31:47 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:31:48 - rmma - INFO - [GET]http://localhost:8000/agent/ReplyGenerationAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:31:48 - rmma - INFO - [GET]http://localhost:8000/agent/ReplyGenerationAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:31:55 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:31:55 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:31:56 - rmma - INFO - [GET]http://localhost:8000/agent/RMMA[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:31:56 - rmma - INFO - [GET]http://localhost:8000/agent/RMMA[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:31:58 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:31:58 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:32:00 - rmma - INFO - [GET]http://localhost:8000/agent/ReplyPostAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:32:00 - rmma - INFO - [GET]http://localhost:8000/agent/ReplyPostAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:32:03 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-15 09:32:03 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36

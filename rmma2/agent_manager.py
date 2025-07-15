@@ -5,6 +5,7 @@ from google.genai import types
 from log.rmma_logger import get_logger
 from rmma2.agent import rmma
 import json
+import importlib
 
 def find_agent(array, agent):
     array.append(agent.name)
@@ -43,8 +44,20 @@ class AgentManager:
         # self.logger.info("Inserting Agent")
         agent = self.find_agent(self.root_agent, agent_name)
         if agent:
-            self.logger.info("Agent found")
+            # self.logger.info("Agent found")
             return agent
+        else:
+            self.logger.error("Agent was not found.")
+            return None
+
+    def reload_agent_module(self, agent_name):
+        agent = self.find_agent(self.root_agent, agent_name)
+        if agent:
+            # エージェントのモジュール名を取得
+            module_name = agent.__class__.__module__
+            self.logger.info(f"Reload agent module: {module_name}")
+            module = importlib.import_module(module_name)
+            return importlib.reload(module)
         else:
             self.logger.error("Agent was not found.")
             return None

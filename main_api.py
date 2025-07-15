@@ -31,7 +31,7 @@ class AgentRequest(BaseModel):
     prompt: str
 
 def log(logger, method, request_url, user_agent):
-    logger.info(f"[{method}] {request_url} [user_agent]: {user_agent}")
+    logger.info(f"[{method}]{request_url}[user_agent]{user_agent}")
 
 @app.get("/", summary="APIのヘルスチェック")
 async def read_root():

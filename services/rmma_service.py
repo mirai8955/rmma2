@@ -6,6 +6,11 @@ from schemas.agent import AgentInfo
 
 logger = get_logger()
 
+def convert_camel_to_snake(name):
+    import re
+    s1 = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', name)
+    return re.sub('([a-z0-9])([A-Z])', r'\1_\2', s1).lower()
+
 class RmmaService:
     def __init__(self):
         pass
@@ -36,16 +41,20 @@ class RmmaService:
     def edit_agent_detail(self, agent_info: AgentInfo) -> AgentInfo:
         """Currently, only instruction of agent can be edited"""
         try:
-
             prompt_manager = PromptManager()
+            agent_manager = AgentManager(agent_info.name)
+            agent_name_snake = convert_camel_to_snake(agent_info.name) + "_prompt"
             if agent_info.instruction is not None:
-                prompt_manager.save_prompt(agent_info.name, agent_info.instruction)
+                prompt_manager.save_prompt(agent_name_snake, agent_info.instruction)
             
-            agent_info.name = prompt_manager.get_prompt(agent_info.name)
+            agent_info.instruction = prompt_manager.get_prompt(agent_name_snake)
+            agent_manager.reload_agent_module(agent_info.name)
             return agent_info
+
         except Exception as e:
             logger.error(f"エラーが発生しました: {e}")
             raise HTTPException(status_code=500, detail=f"エージェント情報の編集中にエラーが発生しました: {str(e)}")
+
 
 
         
