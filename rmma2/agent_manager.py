@@ -98,6 +98,11 @@ class AgentManager:
                     e.function_call for e in event.content.parts if e.function_call
                 ] if event.content.parts else []
 
+                if event.usage_metadata:
+                    total_token = event.usage_metadata.total_token_count
+                    yield f"Total token is {total_token}"
+                    self.logger.info(f"Total token is {total_token}")
+
                 if event.content.parts and event.content.parts[0].text:
                     text_response = event.content.parts[0].text
                     self.logger.info(f"\n[{author}]: {text_response}")

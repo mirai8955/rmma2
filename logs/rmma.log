@@ -1549,3 +1549,232 @@ test
 
 2025-07-15 09:36:17 - rmma - INFO - プロンプトの保存が成功しました: posting_agent_prompt
 2025-07-15 09:36:17 - rmma - INFO - Reload agent module: google.adk.agents.llm_agent
+2025-07-16 00:29:06 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 00:29:06 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 00:29:14 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 00:29:14 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 00:29:43 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 00:29:43 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 00:29:56 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 00:29:56 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 02:12:13 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 02:12:13 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 09:33:01 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 09:33:02 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:02:05 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:02:05 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:02:15 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:02:15 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:02:17 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:02:17 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:02:22 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:02:22 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:02:46 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:02:46 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:02:48 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:02:48 - rmma - INFO - [GET]http://localhost:8000/agent/PostingAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:02:50 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:02:50 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:04:38 - rmma - INFO - [GET]http://localhost:8000/agent/RMMA[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:04:38 - rmma - INFO - [GET]http://localhost:8000/agent/RMMA[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:04:41 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:04:41 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:04:50 - rmma - INFO - [GET]http://localhost:8000/agent/RMMA[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:04:50 - rmma - INFO - [GET]http://localhost:8000/agent/RMMA[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:09:25 - rmma - INFO - [GET]http://localhost:8000/agent/RMMA[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:09:25 - rmma - INFO - [GET]http://localhost:8000/agent/RMMA[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:12:18 - rmma - INFO - [GET]http://localhost:8000/agent/RMMA[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:12:18 - rmma - INFO - [GET]http://localhost:8000/agent/RMMA[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:12:21 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:12:21 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:13:02 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:13:02 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:13:04 - rmma - INFO - [GET]http://localhost:8000/agent/RMMA[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:13:04 - rmma - INFO - [GET]http://localhost:8000/agent/RMMA[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:14:52 - rmma - INFO - [GET]http://localhost:8000/agent/RMMA[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:14:52 - rmma - INFO - [GET]http://localhost:8000/agent/RMMA[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:16:32 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:16:32 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:17:20 - rmma - INFO - [GET]http://localhost:8000/agent/RMMA[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:17:20 - rmma - INFO - [GET]http://localhost:8000/agent/RMMA[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:17:59 - rmma - INFO - [GET]http://localhost:8000/agent/RMMA[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:17:59 - rmma - INFO - [GET]http://localhost:8000/agent/RMMA[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:22:45 - rmma - INFO - [GET]http://localhost:8000/agent/RMMA[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:22:45 - rmma - INFO - [GET]http://localhost:8000/agent/RMMA[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:23:03 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:23:03 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:23:06 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-16 20:23:06 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-17 23:52:28 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-17 23:52:28 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-17 23:57:46 - rmma - INFO - [POST]http://localhost:8000/agent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-17 23:57:46 - rmma - ERROR - Agent was not found.
+2025-07-17 23:57:46 - rmma - INFO - Created session with ID: 46002804-d802-4452-9bef-d3109cd061d8
+2025-07-17 23:57:46 - rmma - INFO - Runner set.
+2025-07-17 23:57:50 - rmma - INFO - 
+[RMMA]: 楽天モバイルは、他社からの乗り換えを考えている方に朗報です！✨
+
+「スマホ料金、もっと安くならないかな…」そう思ってるあなた！楽天モバイルならデータ使い放題※で月額3,278円(税込)！しかも、今ならiPhoneもお得にGETできるチャンスも📱
+
+他社から乗り換えた人からは「通信費が劇的に安くなった！」「楽天ポイントが貯まって嬉しい」という声も多数🙌
+
+さらに、楽天経済圏をよく利用する方なら、SPU（スーパーポイントアップ）の対象にもなるので、ポイントもザクザク貯まりますよ！
+
+月々の通信費を抑えたい、楽天ポイントを貯めたい、そんな方はぜひ楽天モバイルを検討してみてください！
+
+#楽天モバイル #スマホ代節約 #乗り換え #お得情報 #楽天経済圏
+
+※公平なサービス提供のため、速度制限の場合あり。条件は楽天モバイル公式サイトをご確認ください。
+2025-07-18 00:01:03 - rmma - INFO - [POST]http://localhost:8000/agent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 00:01:03 - rmma - ERROR - Agent was not found.
+2025-07-18 00:01:03 - rmma - INFO - Created session with ID: 2dfb1250-2535-4cc1-b557-737f7147bdf5
+2025-07-18 00:01:03 - rmma - INFO - Runner set.
+2025-07-18 00:01:08 - rmma - INFO - 
+[RMMA]: はい、承知いたしました。楽天モバイルの新規契約獲得につながるXの投稿内容を作成します。
+
+---
+
+**投稿案1：料金のメリット訴求**
+
+スマホ料金の見直し考えてる？🤔 楽天モバイルなら、データ利用量に合わせて料金が変動するから、無駄なくお得に使えるんです！✨ どれだけ使っても上限2,980円（税込3,278円）は破格すぎません？💰 他社からの乗り換えも簡単で、今ならお得なキャンペーンも実施中！👇
+
+#楽天モバイル #格安SIM #スマホ料金 #乗り換え
+
+---
+
+**投稿案2：利用者の声・体験談（想定）**
+
+「楽天モバイルに変えてから、毎月のスマホ代が半分以下になった！」という声、よく聞きますよね！😮 私も実際に使ってますが、楽天回線エリアならデータ使い放題でサクサク快適📲✨ 楽天ポイントも貯まって一石二鳥✌️ 乗り換えで悩んでるなら、まずはシミュレーションだけでも！↓
+
+#楽天モバイル #楽天ポイント #節約 #乗り換えキャンペーン
+
+---
+
+**投稿案3：外国人・留学生向け（日本語学習者も意識）**
+
+Hello everyone! 🇯🇵 日本でのスマホ契約、困っていませんか？ 楽天モバイルは、日本語が少し苦手でも大丈夫！シンプルな料金プランで、データもたっぷり使えます。📞✨ 契約もオンラインで簡単！友達にも教えてあげてね🤝
+
+#RakutenMobile #JapanLife #StudyInJapan #MobilePlan #外国人向け
+
+---
+
+**投稿案4：楽天経済圏との連携を訴求**
+
+楽天ユーザーさん必見！👀 楽天モバイルを契約すると、楽天市場でのお買い物がポイントアップするって知ってましたか？🛍️✨ 毎日の生活で賢くポイントを貯めて、もっとお得に！楽天経済圏を最大限に活用しませんか？🚀
+
+#楽天経済圏 #楽天モバイル #楽天市場 #ポイ活
+
+---
+
+これらの投稿案でいかがでしょうか？ターゲット層や強調したい内容に合わせて調整可能ですので、ご意見があればお聞かせください！
+2025-07-18 00:01:38 - rmma - INFO - [POST]http://localhost:8000/agent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 00:01:38 - rmma - INFO - Created session with ID: 93484664-c85a-4eee-85eb-a887af940b23
+2025-07-18 00:01:38 - rmma - INFO - Runner set.
+2025-07-18 00:01:40 - rmma - INFO - 
+[PostingAgent]: 🚀楽天モバイルで、スマホライフをもっと自由に！✨ データ使い放題で月額1,078円～は魅力的。ぜひチェックしてね！ #楽天モバイル
+2025-07-18 00:07:43 - rmma - INFO - [POST]http://localhost:8000/agent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 00:07:43 - rmma - INFO - Created session with ID: cae7a5d7-7a91-4263-9374-51ef1e70d3a2
+2025-07-18 00:07:43 - rmma - INFO - Runner set.
+2025-07-18 00:07:45 - rmma - INFO - 
+[PostingAgent]: 「楽天モバイルって、使えば使うほどお得を実感！私も乗り換えて本当に良かった✨あなたも一緒に楽天モバイルライフ始めませんか？📱 #楽天モバイル #お得」
+2025-07-18 00:08:01 - rmma - INFO - [POST]http://localhost:8000/agent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 00:08:01 - rmma - ERROR - Agent was not found.
+2025-07-18 00:08:01 - rmma - INFO - Created session with ID: b7eec392-2631-4c84-b07b-6ed2a362eb8a
+2025-07-18 00:08:01 - rmma - INFO - Runner set.
+2025-07-18 00:08:03 - rmma - INFO - 
+[RMMA]: transfer_to_agent( {"agent_name": "PostingAgent"})
+2025-07-18 00:08:06 - rmma - INFO - 
+[PostingAgent]: 楽天モバイルでスマホ料金をもっとお得にしませんか？📱✨データ使い放題で月々3,278円！現役社員も太鼓判！今すぐチェック！#楽天モバイル
+2025-07-18 00:09:17 - rmma - INFO - [POST]http://localhost:8000/agent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 00:09:17 - rmma - ERROR - Agent was not found.
+2025-07-18 00:09:17 - rmma - INFO - Created session with ID: d219ced7-9c73-48c2-965f-4cda3e73b7ca
+2025-07-18 00:09:17 - rmma - INFO - Runner set.
+2025-07-18 00:09:21 - rmma - INFO - Total token is 917
+2025-07-18 00:09:21 - rmma - INFO - 
+[RMMA]: 承知いたしました。楽天モバイルの新規契約獲得のためのツイート内容を作成します。
+
+---
+
+🚀✨ 楽天モバイルって本当に安いの？🤔 他社から乗り換えを考えているなら絶対見てほしい！
+
+実は、楽天モバイルは月額料金が使った分だけ！データ利用量が少ない月は基本料金0円からスタートできるから、ムダなくスマホ代を節約できちゃうんです！👛
+
+「実際に使ってみて、毎月のスマホ代が半分以下になった！」という声も多数いただいています🙌
+
+さらに楽天ポイントもザクザク貯まるので、楽天経済圏を活用している方には特におすすめ！
+
+今ならお得なキャンペーンも実施中！
+詳細はプロフURLをチェックしてね！👇
+#楽天モバイル #格安SIM #スマホ乗り換え #節約術 #ポイ活
+
+---
+2025-07-18 00:10:04 - rmma - INFO - [POST]http://localhost:8000/agent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 00:10:04 - rmma - ERROR - Agent was not found.
+2025-07-18 00:10:04 - rmma - INFO - Created session with ID: 4bd73875-4c9b-4768-8baf-16da2f471655
+2025-07-18 00:10:04 - rmma - INFO - Runner set.
+2025-07-18 00:10:06 - rmma - INFO - Total token is 692
+2025-07-18 00:10:06 - rmma - INFO - 
+[RMMA]: transfer_to_agent( {"agent_name": "PostingAgent"})
+2025-07-18 00:10:06 - rmma - INFO - Total token is 702
+2025-07-18 00:10:06 - rmma - INFO - 
+[PostingAgent]: search_on_x( {"query": "楽天モバイル"})
+2025-07-18 00:10:06 - rmma - INFO - Searching with query...楽天モバイル
+2025-07-18 00:10:07 - rmma - INFO - token is ensured!
+2025-07-18 00:10:07 - rmma - INFO - [X] search result: 200 {'data': [{'author_id': '1734364272061218816', 'id': '1945863486950764624', 'edit_history_tweet_ids': ['1945863486950764624'], 'text': '楽天モバイル 店舗 広島\n\n固定回線 ポケットwi-fi 両方 https://t.co/xvLNAIocTW'}, {'author_id': '1388400583204163588', 'id': '1945863329076891956', 'edit_history_tweet_ids': ['1945863329076891956'], 'text': '楽天モバイル 友達招待\n\nプロフのURLから契約すると\n【13,000ポイント】がゲットできる！\n\nデータ無制限プランでストレスフリー！\n高速5G対応で未来の通信を体験！\n\nプラン変更 特典サービス 高速通信'}, {'author_id': '1401524711947837445', 'id': '1945863121731559865', 'edit_history_tweet_ids': ['1945863121731559865'], 'text': '楽天ﾓﾊﾞｲﾙ新規ご契約で13000ポイントプレゼント！   \n※楽天会員にﾛｸﾞｲﾝまたは新規登録後、\n楽天ﾓﾊﾞｲﾙ紹介ｻｲﾄに遷移します。   \n\nこちらから契約をお願いします！\nhttps://t.co/og1j4sTj0z\n\n#ポイ活\n#楽天モバイル\n0:08 https://t.co/luv7iXIDB1写真s2024-02-01s13s47s58_jpg https://t.co/stvGZru9Yj'}, {'author_id': '1334738805530628097', 'id': '1945863059593183361', 'edit_history_tweet_ids': ['1945863059593183361'], 'text': '🔴楽天市場🔴#pr\n\nRakuten Fashion お得まとめ⚡️\n\n🔸サマーセール\n最大80%OFF / 最大500円OFFクーポン\nhttps://t.co/pSnS2b7fuY\n\n🔸500円OFFクーポン (楽天モバイル)\nhttps://t.co/EBS795uAUR\n\n🔸アプリ購入 P最大3倍\nhttps://t.co/7qhCAeLz5R\n\n🔸スーパーDEAL 最大20%還元\nhttps://t.co/BRxGVN1PNE\n. https://t.co/Mgk07O5nt9'}, {'author_id': '1523965545887911936', 'id': '1945863048964841749', 'edit_history_tweet_ids': ['1945863048964841749'], 'text': 'RT @Rakuten_Pacific: 【試合速報📣】\n#プロ野球 \n#sbhawks\n#chibalotte \n\n#福岡ソフトバンク 対 #千葉ロッテ の一戦は\n雨天コールド、規定により2-2の引き分けとなりました☔\n\n👇配信中の試合はコチラから⚡\nhttps://t.co…'}, {'author_id': '1937105238374092801', 'id': '1945862957167980990', 'edit_history_tweet_ids': ['1945862957167980990'], 'text': '新しいお店開拓、今日は金特でパ・リーグの試合見れる最強プランに惹かれた！\n[楽天モバイル最強プラン]\nhttps://t.co/TPwBmyWm2L'}, {'author_id': '1683748895082397696', 'id': '1945862923810902264', 'edit_history_tweet_ids': ['1945862923810902264'], 'text': 'RT @Rakuten_Pacific: 【試合速報📣】\n#プロ野球 \n#sbhawks\n#chibalotte \n\n#福岡ソフトバンク 対 #千葉ロッテ の一戦は\n雨天コールド、規定により2-2の引き分けとなりました☔\n\n👇配信中の試合はコチラから⚡\nhttps://t.co…'}, {'author_id': '1938482851558924288', 'id': '1945862911907258646', 'edit_history_tweet_ids': ['1945862911907258646'], 'text': '楽天モバイルなら、楽天ポイントが毎日貯まる上に、楽天市場のお買い物でポイント5倍！📱✨  さらに、Rakuten Linkアプリで海外の友達と無料通話もできちゃうんです！✈️ #楽天モバイル'}, {'author_id': '2368433408', 'id': '1945862866898207206', 'edit_history_tweet_ids': ['1945862866898207206'], 'text': '楽天モバイル 紹介でポイント\n\nプロフィールの招待リンクから申し込むと\n【13,000ポイント】が手に入る！\n\n月々の費用を安くする方法、今すぐチェック！\n高速5Gでスムーズなネット体験！\n\nインターネット 料金プラン 月額'}, {'author_id': '393124262', 'id': '1945862848829088129', 'edit_history_tweet_ids': ['1945862848829088129'], 'text': 'RT @Rakuten_Pacific: 【試合速報📣】\n#プロ野球 \n#sbhawks\n#chibalotte \n\n#福岡ソフトバンク 対 #千葉ロッテ の一戦は\n雨天コールド、規定により2-2の引き分けとなりました☔\n\n👇配信中の試合はコチラから⚡\nhttps://t.co…'}], 'meta': {'newest_id': '1945863486950764624', 'oldest_id': '1945862848829088129', 'result_count': 10, 'next_token': 'b26v89c19zqg8o3fsc87rljk06a1kgiqn2l0lzyy7ihrx'}}
+2025-07-18 00:10:09 - rmma - INFO - Total token is 2724
+2025-07-18 00:10:09 - rmma - INFO - 
+[PostingAgent]: 楽天モバイルに関するXの投稿を検索しました。以下にいくつかの投稿内容を記載します。
+
+*   楽天モバイル 店舗 広島 固定回線 ポケットwi-fi 両方
+*   楽天モバイル 友達招待 プロフのURLから契約すると【13,000ポイント】がゲットできる！ データ無制限プランでストレスフリー！高速5G対応で未来の通信を体験！
+*   楽天モバイル新規ご契約で13000ポイントプレゼント！
+*   Rakuten Fashion お得まとめ⚡️ 500円OFFクーポン (楽天モバイル)
+*   新しいお店開拓、今日は金特でパ・リーグの試合見れる最強プランに惹かれた！[楽天モバイル最強プラン]
+*   楽天モバイルなら、楽天ポイントが毎日貯まる上に、楽天市場のお買い物でポイント5倍！📱✨ さらに、Rakuten Linkアプリで海外の友達と無料通話もできちゃうんです！✈️
+*   楽天モバイル 紹介でポイント プロフィールの招待リンクから申し込むと【13,000ポイント】が手に入る！月々の費用を安くする方法、今すぐチェック！高速5Gでスムーズなネット体験！
+
+これらの投稿は、楽天モバイルの店舗情報、友達招待キャンペーン、ポイント特典、関連サービスとの連携、そして「最強プラン」やRakuten Linkアプリの利点に言及しています。
+何かこれらの投稿についてさらに知りたいことはありますか？それとも、楽天モバイルに関する新しい投稿を作成しますか？
+
+2025-07-18 11:45:55 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:45:55 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:45:58 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:45:58 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:46:07 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:46:07 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:46:40 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:46:40 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:47:06 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:47:06 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:47:07 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:47:07 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:47:07 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:47:07 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:47:07 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:47:07 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:47:59 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:47:59 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:49:59 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:49:59 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:50:01 - rmma - INFO - [GET]http://localhost:8000/agent/CuratorAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:50:01 - rmma - INFO - [GET]http://localhost:8000/agent/CuratorAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:50:24 - rmma - INFO - [GET]http://localhost:8000/agent/CuratorAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:50:24 - rmma - INFO - [GET]http://localhost:8000/agent/CuratorAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:53:13 - rmma - INFO - [GET]http://localhost:8000/agent/CuratorAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:53:13 - rmma - INFO - [GET]http://localhost:8000/agent/CuratorAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:54:15 - rmma - INFO - [GET]http://localhost:8000/agent/CuratorAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:54:15 - rmma - INFO - [GET]http://localhost:8000/agent/CuratorAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:54:18 - rmma - INFO - [GET]http://localhost:8000/agent/CuratorAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:54:18 - rmma - INFO - [GET]http://localhost:8000/agent/CuratorAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:55:12 - rmma - INFO - [POST]http://localhost:8000/agent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:55:12 - rmma - INFO - Created session with ID: fa5951ff-3a71-4508-b6f7-ec2f5ffccee7
+2025-07-18 11:55:12 - rmma - INFO - Runner set.
+2025-07-18 11:59:22 - rmma - INFO - [POST]http://localhost:8000/agent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:59:22 - rmma - INFO - Created session with ID: 50129fc9-61d8-47d6-90f0-d22273248bac
+2025-07-18 11:59:22 - rmma - INFO - Runner set.
+2025-07-18 11:59:46 - rmma - INFO - [POST]http://localhost:8000/agent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:59:46 - rmma - INFO - Created session with ID: 6785ff70-0bc8-4a51-b16f-642d3c3bd7bb
+2025-07-18 11:59:46 - rmma - INFO - Runner set.
+2025-07-18 11:59:58 - rmma - INFO - [POST]http://localhost:8000/agent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+2025-07-18 11:59:58 - rmma - INFO - Created session with ID: adf42686-2290-4dd8-8c42-9ed153dadde7
+2025-07-18 11:59:58 - rmma - INFO - Runner set.

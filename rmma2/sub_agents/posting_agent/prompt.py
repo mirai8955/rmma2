@@ -1,5 +1,3 @@
-
-
 from prompt.prompt_manager import PromptManager
 pm = PromptManager()
 posting_agent_prompt = pm.get_prompt("posting_agent_prompt")
