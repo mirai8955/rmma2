@@ -9,6 +9,7 @@ import json
 from prompt.prompt_manager import PromptManager
 from schemas.agent import AgentInfo
 from services.rmma_service import RmmaService
+from documents.document import read_file, write_file, get_document_lists
 
 # from main import async_content_generation, stream_run_agent
 
@@ -30,7 +31,7 @@ class AgentRequest(BaseModel):
     agent_name: str
     prompt: str
 
-def log(logger, method, request_url, user_agent):
+def request_log(logger, method, request_url, user_agent):
     logger.info(f"[{method}]{request_url}[user_agent]{user_agent}")
 
 @app.get("/", summary="APIのヘルスチェック")
@@ -56,7 +57,7 @@ async def run_agent_stream(agent_request: AgentRequest, request: Request):
         user_agent = request.headers.get("User-Agent", "Unknown")
         method = request.method
         request_url = str(request.url)
-        log(logger, method, request_url, user_agent)
+        request_log(logger, method, request_url, user_agent)
         
         agent_manager = AgentManager(agent_request.agent_name)
         return StreamingResponse(
@@ -67,7 +68,7 @@ async def run_agent_stream(agent_request: AgentRequest, request: Request):
 @app.get("/agent/lists", summary="利用可能なエージェントのリストを返す")
 def get_agent_list(request: Request):
     logger = get_logger()
-    log(
+    request_log(
         logger,
         request.method,
         str(request.url),
@@ -83,7 +84,7 @@ def get_agent_list(request: Request):
 @app.get("/agent/{agent_name}", summary="指定されたエージェントの詳細情報を返す")
 def get_agent_detail(agent_name: str, request: Request):
     logger = get_logger()
-    log(
+    request_log(
         logger,
         request.method,
         str(request.url),
@@ -107,7 +108,7 @@ def get_agent_detail(agent_name: str, request: Request):
 @app.post('/agent/{agent_name}', summary="agentの編集")
 def edit_agent_detail(agent_name: str, agent_info: AgentInfo, request: Request):
     logger = get_logger()
-    log(
+    request_log(
         logger,
         request.method,
         str(request.url),
@@ -131,7 +132,7 @@ def edit_agent_detail(agent_name: str, agent_info: AgentInfo, request: Request):
 @app.get("/prompt/lists", summary="全てのプロンプトを返す")
 def get_prompt_list(request: Request):
     logger = get_logger()
-    log(
+    request_log(
         logger,
         request.method,
         str(request.url),
@@ -143,6 +144,37 @@ def get_prompt_list(request: Request):
     
     return {
         "result": json.dumps(prompts, ensure_ascii=False)
+    }
+
+@app.get("/documents")
+def get_documents(filename: str, request: Request):
+    logger = get_logger()
+    request_log(logger, request.method, str(request.url), request.headers.get("User-Agent", "Unknown"))
+    doc = read_file(filename)
+    return {
+        "status": "success",
+        "result": doc
+    }
+
+@app.post("/documents")
+def write_documents(filename: str, content: dict[str, str], request: Request):
+    logger = get_logger()
+    request_log(logger, request.method, str(request.url), request.headers.get("User-Agent", "Unknown"))
+    content_text = content["content"]
+    doc = write_file(filename, content_text)
+    return {
+        "status": "success",
+        "result": doc,
+    }
+
+@app.get("/documents/lists")
+def get_documents_lists(request: Request):
+    logger = get_logger()
+    request_log(logger, request.method, str(request.url), request.headers.get("User-Agent", "Unknown"))
+    documents = get_document_lists()
+    return {
+        "status": "success",
+        "result": json.dumps(documents, ensure_ascii=False),
     }
 
 
