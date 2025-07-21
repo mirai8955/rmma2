@@ -14,6 +14,9 @@ from log.rmma_logger import get_logger
 
 logger = get_logger()
 
+
+
+### Regarding to X ###
 class x_client:
     def __init__(self):
         load_dotenv()
@@ -241,3 +244,8 @@ def search_on_x(query: str):
     else:
         logger.info(f"Search failed: {r.status_code} {r.text}")
         return {"error": f"Search failed with status {r.status_code}"}
+
+
+
+
+### 
