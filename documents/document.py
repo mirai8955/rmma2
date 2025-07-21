@@ -19,6 +19,7 @@ def read_file(filename: str) -> str:
     Raises:
         FileNotFoundError: ファイルが見つからない場合
     """
+    logger.info(f"Reading file: {filename}")
     # .md拡張子を自動で付加
     md_filename = f"{filename}.md"
     
