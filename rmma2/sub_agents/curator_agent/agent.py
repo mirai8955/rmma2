@@ -1,15 +1,22 @@
 from .prompt import CURATOR_AGENT_PROMPT
-from google.adk.agents import LlmAgent
-from google.adk.tools import google_search
+from google.adk.agents import LlmAgent, Agent
+from google.adk.tools import google_search, agent_tool
 from os import getenv
 from dotenv import load_dotenv
 
 load_dotenv()
 MODEL = getenv("MODEL_PRO")
 
-def so_search(query: str) -> str:
-    """google web検索を利用して情報を検索します"""
-    return google_search(query)
+
+
+search_agent = Agent(
+    model=MODEL or "gemini-2.5-flash",
+    name='SearchAgent',
+    instruction="""
+    You're a specialist in Google Search
+    """,
+    tools=[google_search],
+)
 
 curator_agent=LlmAgent(
     model=MODEL or "gemini-2.5-flash",
@@ -21,5 +28,5 @@ curator_agent=LlmAgent(
     ),
     instruction=CURATOR_AGENT_PROMPT,
     output_key="curator_agent_output",
-    tools=[google_search],
+    tools=[agent_tool.AgentTool(agent=search_agent)],
 )
