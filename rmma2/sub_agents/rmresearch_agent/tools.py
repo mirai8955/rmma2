@@ -13,8 +13,8 @@ def doc_write(filename: str, content: str):
     Return:
         result: 保存された内容
     """
-
-    doc_file = os.path.join(current_dir, f"{filename}.md")
+    logger.info(f"Writing file  with the filename:{filename}")
+    doc_file = os.path.join("documents", f"{filename}.md")
     
     try:
         with open(doc_file, 'w', encoding='utf-8') as f:
