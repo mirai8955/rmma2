@@ -4,6 +4,7 @@ from . import prompt
 from rmma2.sub_agents.posting_agent.agent import posting_agent
 from rmma2.sub_agents.reply_agent.agent import reply_pipeline_agent
 from rmma2.sub_agents.rmresearch_agent.agent import rmresearch_agent
+from rmma2.sub_agents.persona_agent.agent import persona_agent
 from os import getenv
 from dotenv import load_dotenv
 
@@ -23,6 +24,7 @@ rmma = LlmAgent(
         posting_agent,
         reply_pipeline_agent,
         rmresearch_agent,
+        persona_agent,
     ],
     output_key="rmma_output",
 )
