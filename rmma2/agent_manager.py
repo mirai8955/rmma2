@@ -56,6 +56,17 @@ class AgentManager:
             # エージェントのモジュール名を取得
             module_name = agent.__class__.__module__
             self.logger.info(f"Reload agent module: {module_name}")
+            
+            # プロンプトモジュールも一緒にリロード
+            prompt_module_name = module_name.replace('.agent', '.prompt')
+            try:
+                prompt_module = importlib.import_module(prompt_module_name)
+                importlib.reload(prompt_module)
+                self.logger.info(f"Reloaded prompt module: {prompt_module_name}")
+            except ModuleNotFoundError:
+                self.logger.warning(f"Prompt module not found: {prompt_module_name}")
+            
+            # エージェントモジュールをリロード
             module = importlib.import_module(module_name)
             return importlib.reload(module)
         else:
