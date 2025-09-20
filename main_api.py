@@ -1,6 +1,6 @@
 import asyncio
 from fastapi import FastAPI, HTTPException, Query, Request
-from fastapi.responses import StreamingResponse
+from fastapi.responses import StreamingResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from log.rmma_logger import get_logger
@@ -87,11 +87,18 @@ def get_agent_detail(agent_name: str, request: Request):
 
         # logger.info(agent_info['description'])
         
-        return {
-            "status": "success",
-            "agent_name": agent_name,
-            "result": json.dumps(agent_info, ensure_ascii=False)
-        }
+        return JSONResponse(
+            content={
+                "status": "success",
+                "agent_name": agent_name,
+                "result": json.dumps(agent_info, ensure_ascii=False)
+            },
+            headers={
+                "Cache-Control": "no-cache, no-store, must-revalidate",
+                "Pragma": "no-cache",
+                "Expires": "0",
+            }
+        )
 
     except Exception as e:
         logger.error(f"Error occured: {e}")

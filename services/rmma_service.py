@@ -22,11 +22,19 @@ class RmmaService:
         if agent is None:
             raise HTTPException(status_code=404, detail=f"エージェント '{agent_name}' が見つかりません。利用可能なエージェント: {get_agent_all()}")
         
+        instruction_value = getattr(agent, 'instruction', None)
+        if callable(instruction_value):
+            # instructionが関数（呼び出し可能）であれば、実行して最新のプロンプトを取得
+            instruction_text = instruction_value()
+        else:
+            # 文字列であれば、そのまま使う
+            instruction_text = instruction_value
+
         # エージェントオブジェクトを辞書に変換
         agent_info = {
             "name": agent.name,
             "description": agent.description,
-            "instruction": getattr(agent, 'instruction', None),
+            "instruction": instruction_text,
             "model": getattr(agent, 'model', 'Unknown'),
             "output_key": getattr(agent, 'output_key', None),
             "sub_agents": [sub_agent.name for sub_agent in getattr(agent, 'sub_agents', [])],

@@ -48,10 +48,7 @@ reply_post_agent = LlmAgent(
 
 reply_pipeline_agent = SequentialAgent(
     name="ReplyPipelineAgent",
-    # model=MODEL,
     description="Xから該当する投稿を検索し，返信内容を考え，返信するエージェント",
-    # instruction=RMMA_REPLY_PROMPT,
     sub_agents=[tweet_search_agent, reply_generation_agent, reply_post_agent],
 )
 
-# root_agent = reply_pipeline_agent
