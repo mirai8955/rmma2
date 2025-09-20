@@ -2,3 +2,6 @@
 venv/
 .env
 .x_tokens*
+.logs/rmma.log
+
+.docs/learning.md

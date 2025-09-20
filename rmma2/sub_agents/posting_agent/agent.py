@@ -2,12 +2,16 @@ from os import getenv
 from dotenv import load_dotenv
 from google.adk.agents import LlmAgent
 from .tools import post_on_x, search_on_x, read_file, get_document_lists
-
+from prompt.prompt_manager import PromptManager
 from . import prompt
 
 
 load_dotenv()
 MODEL = getenv("MODEL")
+
+def get_prompt():
+    pm = PromptManager()
+    return pm.get_prompt('rmma_posting_prompt')
 
 posting_agent = LlmAgent(
     model=MODEL or "gemini-2.5-flash",

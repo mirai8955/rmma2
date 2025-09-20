@@ -48,11 +48,13 @@ class RmmaService:
                 prompt_manager.save_prompt(agent_name_snake, agent_info.instruction)
             
             agent_info.instruction = prompt_manager.get_prompt(agent_name_snake)
-            agent_manager.reload_agent_module(agent_info.name)
+            success = agent_manager.reload_agent_module(agent_info.name)
+            if not success:
+                raise Exception("Failed to reload agent module.")
             return agent_info
 
         except Exception as e:
-            logger.error(f"エラーが発生しました: {e}")
+            logger.error(f"An error occurred while editing agent detail for {agent_info.name}: {e}\n{traceback.format_exc()}")
             raise HTTPException(status_code=500, detail=f"エージェント情報の編集中にエラーが発生しました: {str(e)}")
 
 

@@ -6,13 +6,13 @@ from log.rmma_logger import get_logger
 from rmma2.agent import rmma
 import json
 import importlib
+import traceback
 
 def find_agent(array, agent):
     array.append(agent.name)
     for sub_agent in agent.sub_agents:
         find_agent(array, sub_agent)
     return array
-
 
 def get_agent_all():
     result = []
@@ -51,27 +51,66 @@ class AgentManager:
             return None
 
     def reload_agent_module(self, agent_name):
+        # 対象エージェントの存在確認（現在のツリー上）
         agent = self.find_agent(self.root_agent, agent_name)
-        if agent:
-            # エージェントのモジュール名を取得
-            module_name = agent.__class__.__module__
-            self.logger.info(f"Reload agent module: {module_name}")
-            
-            # プロンプトモジュールも一緒にリロード
-            prompt_module_name = module_name.replace('.agent', '.prompt')
-            try:
-                prompt_module = importlib.import_module(prompt_module_name)
-                importlib.reload(prompt_module)
-                self.logger.info(f"Reloaded prompt module: {prompt_module_name}")
-            except ModuleNotFoundError:
-                self.logger.warning(f"Prompt module not found: {prompt_module_name}")
-            
-            # エージェントモジュールをリロード
-            module = importlib.import_module(module_name)
-            return importlib.reload(module)
-        else:
+        if not agent:
             self.logger.error("Agent was not found.")
-            return None
+            return False
+
+        # エージェント名から自前のモジュールパスを決定
+        if agent_name == self.root_agent.name:
+            agent_module_name = self.root_agent.__class__.__module__
+            base_path, _ = agent_module_name.rsplit('.', 1)
+            prompt_module_name = f"{base_path}.prompt"
+        if agent_name == "RMMA":
+            agent_module_name = "rmma2.agent"
+            prompt_module_name = "rmma2.prompt"
+        else:
+            snake_case_name = self._convert_to_snake_case(agent_name)
+            agent_module_name = f"rmma2.sub_agents.{snake_case_name}.agent"
+            prompt_module_name = f"rmma2.sub_agents.{snake_case_name}.prompt"
+
+        self.logger.info(f"Reload target -> agent: {agent_module_name}, prompt: {prompt_module_name}")
+
+        # 1) プロンプトモジュールを先にリロード
+        try:
+            prompt_module = importlib.import_module(prompt_module_name)
+            importlib.reload(prompt_module)
+            self.logger.info(f"Reloaded prompt module: {prompt_module_name}")
+        except ModuleNotFoundError:
+            self.logger.warning(f"Prompt module not found: {prompt_module_name}")
+        except Exception as e:
+            self.logger.error(f"Failed to reload prompt module: {prompt_module_name}: {e}\n{traceback.format_exc()}")
+            return False
+
+        # 2) エージェントモジュールをリロード（新しい instruction で再構築される）
+        try:
+            agent_module = importlib.import_module(agent_module_name)
+            importlib.reload(agent_module)
+            self.logger.info(f"Reloaded agent module: {agent_module_name}")
+        except ModuleNotFoundError:
+            self.logger.error(f"Agent module not found: {agent_module_name}")
+            return False
+        except Exception as e:
+            self.logger.error(f"Failed to reload agent module: {agent_module_name}: {e}\n{traceback.format_exc()}")
+            return False
+
+
+        return True
+        # # 3) ルート集約モジュールをリロードし、root_agent と self.agent を差し替える
+        try:
+            root_module = importlib.import_module("rmma2.agent")
+            importlib.reload(root_module)
+            return True
+        except Exception as e:
+            self.logger.error(f"Failed to reload root rmma2.agent: {e}\n{traceback.format_exc()}")
+            return False
+
+    def _convert_to_snake_case(self, camel_case_name):
+        import re
+        name = camel_case_name.replace("Agent", "")
+        snake_case = re.sub(r'(?<!^)(?=[A-Z])', '_', name).lower()
+        return f"{snake_case}_agent"
         
     async def create_session_and_services(self):
         session_service = InMemorySessionService()
