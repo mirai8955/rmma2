@@ -3747,3 +3747,81 @@ test
 2025-09-21 01:18:27 - rmma - INFO - Reloaded agent module: rmma2.sub_agents.persona_agent.agent
 2025-09-21 01:18:28 - rmma - INFO - [GET]http://localhost:8000/agent/PersonaAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
 2025-09-21 01:18:28 - rmma - INFO - [GET]http://localhost:8000/agent/PersonaAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 01:59:16 - rmma - INFO - [GET]http://localhost:8000/agent/PersonaAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 01:59:16 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 01:59:16 - rmma - INFO - [GET]http://localhost:8000/agent/PersonaAgent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 01:59:16 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 16:32:37 - rmma - INFO - [GET]http://localhost:8000/documents/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 16:32:37 - rmma - INFO - [GET]http://localhost:8000/documents/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 16:32:45 - rmma - INFO - [POST]http://localhost:8000/documents?filename=%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 16:32:45 - rmma - INFO - ファイル書き込み完了: プロンプト.md
+2025-09-21 16:32:45 - rmma - INFO - [GET]http://localhost:8000/documents?filename=%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 16:32:45 - rmma - INFO - Reading file: プロンプト
+2025-09-21 16:32:45 - rmma - INFO - [GET]http://localhost:8000/documents?filename=%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 16:32:45 - rmma - INFO - Reading file: プロンプト
+2025-09-21 16:32:51 - rmma - INFO - [GET]http://localhost:8000/documents/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 16:32:51 - rmma - INFO - [GET]http://localhost:8000/documents/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 16:33:29 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 16:33:29 - rmma - INFO - [GET]http://localhost:8000/agent/lists[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 16:33:31 - rmma - INFO - [POST]http://localhost:8000/agent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 16:33:31 - rmma - INFO - Created session with ID: b1b8a61f-092a-4916-8b65-602ee1efec93
+2025-09-21 16:33:31 - rmma - INFO - Runner set.
+2025-09-21 17:00:09 - rmma - INFO - [POST]http://localhost:8000/agent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 17:00:09 - rmma - INFO - Created session with ID: bf782596-b0a7-4f42-b7ed-71d0e22be85f
+2025-09-21 17:00:09 - rmma - INFO - Runner set.
+2025-09-21 17:00:11 - rmma - INFO - [POST]http://localhost:8000/agent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 17:00:11 - rmma - INFO - Created session with ID: d71c3e9d-4d62-4d32-af2a-7fdb91aab305
+2025-09-21 17:00:11 - rmma - INFO - Runner set.
+2025-09-21 17:00:12 - rmma - INFO - [POST]http://localhost:8000/agent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 17:00:12 - rmma - INFO - Created session with ID: 2c4ba59c-756c-4bc7-9130-e93ed3673c85
+2025-09-21 17:00:12 - rmma - INFO - Runner set.
+2025-09-21 17:02:38 - rmma - INFO - [POST]http://localhost:8000/agent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 17:02:38 - rmma - INFO - Created session with ID: 56874c07-5895-4105-b906-7c9a7faff80d
+2025-09-21 17:02:38 - rmma - INFO - Runner set.
+2025-09-21 17:02:42 - rmma - INFO - Total token is 1074
+2025-09-21 17:02:42 - rmma - INFO - 
+[RMMA]: transfer_to_agent( {"agent_name": "PostingAgent"})
+2025-09-21 17:42:29 - rmma - INFO - [POST]http://localhost:8000/agent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 17:42:29 - rmma - INFO - Created session with ID: 043acfe5-4603-4ca3-8e75-cdc761063d6d
+2025-09-21 17:42:29 - rmma - INFO - Runner set.
+2025-09-21 22:02:13 - rmma - INFO - [POST]http://localhost:8000/agent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 22:02:13 - rmma - ERROR - Agent was not found.
+2025-09-21 22:02:13 - rmma - INFO - Created session with ID: c11d18e0-0fa2-4a5e-b54f-42de41c9884e
+2025-09-21 22:02:13 - rmma - INFO - Runner set.
+2025-09-21 22:02:15 - rmma - INFO - Total token is 1035
+2025-09-21 22:02:15 - rmma - INFO - 
+[RMMA]: transfer_to_agent( {"agent_name": "PostingAgent"})
+2025-09-21 22:02:15 - rmma - EXCEPTION - Streaming faild
+2025-09-21 22:02:51 - rmma - INFO - [POST]http://localhost:8000/agent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 22:02:51 - rmma - ERROR - Agent was not found.
+2025-09-21 22:02:51 - rmma - INFO - Created session with ID: 39b04303-2d39-4856-9edc-d0378263d86b
+2025-09-21 22:02:51 - rmma - INFO - Runner set.
+2025-09-21 22:02:58 - rmma - INFO - Total token is 1484
+2025-09-21 22:02:58 - rmma - INFO - 
+[RMMA]: transfer_to_agent( {"agent_name": "PostingAgent"})
+2025-09-21 22:02:58 - rmma - EXCEPTION - Streaming faild
+2025-09-21 22:10:14 - rmma - INFO - [POST]http://localhost:8000/agent[user_agent]Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+2025-09-21 22:10:14 - rmma - ERROR - Agent was not found.
+2025-09-21 22:10:14 - rmma - INFO - Created session with ID: 07188570-eaf6-47ab-85ed-a99433a1d602
+2025-09-21 22:10:14 - rmma - INFO - Runner set.
+2025-09-21 22:10:37 - rmma - INFO - Total token is 4064
+2025-09-21 22:10:37 - rmma - INFO - 
+[RMMA]: transfer_to_agent( {"agent_name": "PostingAgent"})
+2025-09-21 22:10:39 - rmma - INFO - Total token is 1092
+2025-09-21 22:10:39 - rmma - INFO - 
+[PostingAgent]: get_document_lists( {"folder": "persona"})
+2025-09-21 22:10:40 - rmma - INFO - Total token is 1117
+2025-09-21 22:10:40 - rmma - INFO - 
+[PostingAgent]: read_file( {"folder": "persona", "filename": "楽天モバイル皮肉bot"})
+2025-09-21 22:10:40 - rmma - INFO - Reading file: 楽天モバイル皮肉bot
+2025-09-21 22:10:44 - rmma - INFO - Total token is 3730
+2025-09-21 22:10:44 - rmma - INFO - 
+[PostingAgent]: post_on_x( {"content": "「最強」って聞くと、どこでも繋がるイメージよな。なのに地下鉄で圏外…いや、そこは\"最強\"であってほしいのよ。頼むで、楽天モバイルさん！"})
+2025-09-21 22:10:44 - rmma - INFO - Posting the content... 「最強」って聞くと、どこでも繋がるイメージよな。なのに地下鉄で圏外…いや、そこは"最強"であってほしいのよ。頼むで、楽天モバイルさん！
+2025-09-21 22:10:44 - rmma - INFO - token is ensured!
+2025-09-21 22:10:45 - rmma - INFO - [X] tweet result: 201 {"data":{"text":"「最強」って聞くと、どこでも繋がるイメージよな。なのに地下鉄で圏外…いや、そこは\"最強\"であってほしいのよ。頼むで、楽天モバイルさん！","id":"1969751149432713464","edit_history_tweet_ids":["1969751149432713464"]}}
+2025-09-21 22:10:46 - rmma - INFO - Total token is 3471
+2025-09-21 22:10:46 - rmma - INFO - 
+[PostingAgent]: 楽天モバイルに関して、皮肉を込めた投稿が完了しました！
+
+「最強」って聞くと、どこでも繋がるイメージよな。なのに地下鉄で圏外…いや、そこは"最強"であってほしいのよ。頼むで、楽天モバイルさん！

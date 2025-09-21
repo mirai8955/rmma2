@@ -8,7 +8,7 @@ from log.rmma_logger import get_logger
 
 logger = get_logger()
 
-def read_file(filename: str, folder: str | None = None) -> str:
+def read_file(filename: str, folder: str = "") -> str:
     """
     ドキュメントとして保存してあるファイルを読み取る関数
     
@@ -67,7 +67,7 @@ def write_file(filename: str, content: str) -> str:
     except Exception as e:
         raise Exception(f"ファイル書き込みエラー: {str(e)}")
             
-def get_document_lists(folder: str | None = None):
+def get_document_lists(folder: str=""):
     """
     現在のディレクトリ配下の全てのMarkdownファイルの名前を拡張子なしで返す関数
     
@@ -151,3 +151,22 @@ def read_persona_file(filename: str)-> str:
     except Exception as e:
         logger.error(f"ファイル読み取りエラー: {str(e)}")
         raise e
+
+def read_persona_lists() -> list[str]:
+    """
+    ペルソナの情報が載っている全てのファイル名をリストを返す関数
+
+    Return:
+        list[str]: ファイル名のリスト
+    """
+
+    current_dir = Path(__file__).parent
+    persona_dir = current_dir / "persona"
+
+    if not persona_dir.exists():
+        raise FileNotFoundError(f"Directory: {persona_dir} was not found.")
+    
+    md_files = [f.stem for f in persona_dir.glob("*.md")]
+
+    return md_files
+

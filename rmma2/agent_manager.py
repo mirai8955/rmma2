@@ -177,16 +177,22 @@ class AgentManager:
 
         content = types.Content(role="user", parts=[types.Part(text=prompt)])
 
-        if self.runner:
-            events_async = self.runner.run_async(
-                session_id=session.id, user_id="test", new_message=content
-            )
-            async for message in self.monitor_llm(events_async):
-                yield message
+        try:
+            if self.runner:
+                events_async = self.runner.run_async(
+                    session_id=session.id, user_id="test", new_message=content
+                )
+                async for message in self.monitor_llm(events_async):
+                    yield message
 
-        else:
-            self.logger.error("Runner is not set")
-            yield "Error: Runner is not set"
+            else:
+                self.logger.error("Runner is not set")
+                yield "Error: Runner is not set"
+
+        except Exception as e:
+            self.logger.exception("Streaming faild")
+            yield f"Error: {e}"
+
 
 
 

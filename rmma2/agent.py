@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 load_dotenv()
 MODEL = getenv("MODEL")
 
-def get_prompt():
+def get_prompt(ctx=None):
     pm = PromptManager()
     return pm.get_prompt("rakuten_mobile_marketing_agent_prompt")
 

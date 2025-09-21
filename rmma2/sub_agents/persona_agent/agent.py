@@ -8,7 +8,7 @@ from prompt.prompt_manager import PromptManager
 load_dotenv()
 MODEL_PRO = getenv("MODEL_PRO")
 
-def get_prompt():
+def get_prompt(ctx=None):
     pm = PromptManager()
     return pm.get_prompt('persona_agent_prompt')
 

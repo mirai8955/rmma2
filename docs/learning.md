@@ -63,3 +63,14 @@
 - **結論**: この設計に変更することで、`importlib.reload()` という複雑でエラーの温床となる仕組みを完全に排除できる。プロンプト（データ）は `prompts.yaml` に、ロジックは `agent.py` にと綺麗に分離され、プロンプトの変更はエージェントの次回の実行時に自動で反映されるようになり、はるかにクリーンで堅牢な設計になる。
 
 
+## ADK 自動Function Callingとシグネチャ設計（要約）
+- 問題: Optional/Union（例: `folder: str | None = None`）が自動JSON Schema生成で失敗し ValueError。 
+- 一般化: フレームワークの自動スキーマ生成とIDL境界の不一致。required/nullableの曖昧さはLLMの引数合成を不安定化（省略/null/空文字の選択が揺れる）。
+- 原因: ADKは単純型前提でスキーマ化。Union/nullableはrequired判定やnull/省略の意味付けが衝突しやすい。
+- 解決: 公開シグネチャを単純化し自動生成に寄せる。
+  - `folder: str = ""`（未指定は空文字）にする、または関数を分割（`read_document` / `read_persona_document`）。
+  - 返却型はJSON直列可能な単純型に統一（str/list[str]/dict）。
+  - 必要ならFunctionToolに明示スキーマを付与（enum等）。
+  - Toolの外向きシグネチャから Optional/Union/ctx/**kwargs を排除し、内部で正規化・検証。
+
+

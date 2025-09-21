@@ -71,6 +71,9 @@ class LoggerInstance:
     def debug(self, message):
         self.manager._write('DEBUG', message, self.name)
 
+    def exception(self, message):
+        self.manager._write('EXCEPTION', message, self.name)
+
 # グローバルインスタンス
 _logger_manager = RMMALogger()
 
@@ -94,3 +97,7 @@ def warning(message):
 def debug(message):
     """デフォルトロガーでDEBUGログを出力"""
     get_logger().debug(message)
+
+def exception(message):
+    """デフォルトロガーでEXCEPTIONログを出力"""
+    get_logger().exception(message)

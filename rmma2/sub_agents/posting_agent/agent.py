@@ -9,7 +9,7 @@ from . import prompt
 load_dotenv()
 MODEL = getenv("MODEL")
 
-def get_prompt():
+def get_prompt(ctx=None):
     pm = PromptManager()
     return pm.get_prompt('rmma_posting_prompt')
 

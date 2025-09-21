@@ -9,7 +9,7 @@ from prompt.prompt_manager import PromptManager
 load_dotenv()
 MODEL = getenv("MODEL_PRO")
 
-def get_prompt():
+def get_prompt(ctx=None):
     pm = PromptManager()
     return pm.get_prompt('rmresearch_agent_prompt')
 

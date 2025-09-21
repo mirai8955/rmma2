@@ -8,15 +8,15 @@ from prompt.prompt_manager import PromptManager
 load_dotenv()
 MODEL = getenv("MODEL")
 
-def get_prompt_tsa():
+def get_prompt_tsa(ctx=None):
     pm = PromptManager()
     return pm.get_prompt('tweet_search_agent')
 
-def get_prompt_rga():
+def get_prompt_rga(ctx=None):
     pm = PromptManager()
     return pm.get_prompt('reply_generation_agent')
 
-def get_prompt_rpa():
+def get_prompt_rpa(ctx=None):
     pm = PromptManager()
     return pm.get_prompt('reply_post_agent')
 
